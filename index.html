@@ -1,0 +1,1892 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<title>Grids</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f6f7f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1d20" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Grids">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiI+CiAgPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9IiMxYTFkMjAiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y2ZjdmNyIgc3Ryb2tlLXdpZHRoPSIzIj4KICAgIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiNmNmY3ZjciLz48cmVjdCB4PSI0MiIgeT0iMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+CiAgICA8cmVjdCB4PSIyIiB5PSIyMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz48cmVjdCB4PSI0MiIgeT0iMjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPgogICAgPHJlY3QgeD0iMiIgeT0iNDIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSI0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iNDIiIHk9IjQyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz4KICA8L2c+Cjwvc3ZnPgo=" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiI+CiAgPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9IiMxYTFkMjAiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y2ZjdmNyIgc3Ryb2tlLXdpZHRoPSIzIj4KICAgIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiNmNmY3ZjciLz48cmVjdCB4PSI0MiIgeT0iMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+CiAgICA8cmVjdCB4PSIyIiB5PSIyMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz48cmVjdCB4PSI0MiIgeT0iMjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPgogICAgPHJlY3QgeD0iMiIgeT0iNDIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSI0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iNDIiIHk9IjQyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz4KICA8L2c+Cjwvc3ZnPgo=">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Grids">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e4e6e7; --surface:#f6f7f7; --ink:#1a1d20; --ink2:#666d73;
+  --line:rgba(26,29,32,.12); --line2:rgba(26,29,32,.28);
+  --empty-hover:rgba(26,29,32,.06);
+  --accent:#4d6b7a; --danger:#9a4a45;
+  --font-ui:"Jost","Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI",Meiryo,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111315; --surface:#1a1d20; --ink:#e7e9ea; --ink2:#8f979d;
+    --line:rgba(231,233,234,.11); --line2:rgba(231,233,234,.26);
+    --empty-hover:rgba(231,233,234,.07);
+    --accent:#93b1bf; --danger:#c9736c;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111315; --surface:#1a1d20; --ink:#e7e9ea; --ink2:#8f979d;
+  --line:rgba(231,233,234,.11); --line2:rgba(231,233,234,.26);
+  --empty-hover:rgba(231,233,234,.07);
+  --accent:#93b1bf; --danger:#c9736c;
+}
+
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{
+  background:var(--bg);color:var(--ink);font-family:var(--font-ui);
+  overflow:hidden;overscroll-behavior:none;
+  -webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+}
+button{font:inherit;color:inherit;cursor:pointer}
+
+#app{height:100%;display:flex;flex-direction:column;width:100%;max-width:760px;margin:0 auto;padding:0 16px}
+
+/* header */
+.top{display:flex;align-items:center;gap:14px;padding:16px 0 12px}
+.brand{display:flex;align-items:center;gap:10px;animation:fade .9s ease backwards}
+.mark{width:22px;height:22px;flex:none;color:var(--ink)}
+.word{font:300 24px/1 var(--font-ui);letter-spacing:.08em}
+.tag{font-size:12px;color:var(--ink2);padding-left:14px;border-left:1px solid var(--line2);line-height:1.3;letter-spacing:.06em}
+@keyframes fade{from{opacity:0}}
+
+/* breadcrumbs */
+.crumbrow{display:flex;align-items:center;gap:8px;height:44px;border-bottom:1px solid var(--line)}
+.ico{width:30px;height:30px;border-radius:3px;border:1px solid var(--line2);background:transparent;display:grid;place-items:center;flex:none}
+.ico:active{background:var(--empty-hover)}
+.crumbs{flex:1;min-width:0;display:flex;align-items:center;gap:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.crumbs::-webkit-scrollbar{display:none}
+.crumb{border:0;background:transparent;padding:6px 7px;border-radius:2px;font-size:13px;letter-spacing:.04em;color:var(--ink2);flex:none;max-width:9em;overflow:hidden;text-overflow:ellipsis}
+.crumb.cur{color:var(--ink);font-weight:500}
+.sep{color:var(--ink2);opacity:.45;flex:none;font-weight:300}
+.pill{flex:none;display:flex;align-items:center;gap:6px;border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:3px;padding:6px 10px;font-size:12px;font-weight:500;letter-spacing:.04em}
+.pill:active{background:var(--empty-hover)}
+
+/* board */
+.stage{
+  flex:1;min-height:0;container-type:size;display:flex;padding:12px 10px 10px;margin:0 -10px;
+  overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;
+}
+.stage::-webkit-scrollbar{width:10px;height:10px}
+.stage::-webkit-scrollbar-thumb{background:var(--line2);border:3px solid transparent;background-clip:padding-box}
+.stage::-webkit-scrollbar-thumb:hover{background:var(--ink2);background-clip:padding-box}
+.stage::-webkit-scrollbar-corner{background:transparent}
+
+/* cells keep a square shape. Up to 12 across they fill the screen; beyond that they stop shrinking and the stage scrolls */
+.frame{
+  --gx:0px;--gy:0px;--gb:0px;--fit:12;
+  --s:max(calc(min(100cqw - var(--gx),100cqh - var(--gy) - var(--gb)) / var(--fit)),min(calc((100cqw - var(--gx)) / var(--cols)),calc((100cqh - var(--gy) - var(--gb)) / var(--rows))));
+  --bw:calc(var(--cols) * var(--s));
+  --gap:clamp(2px,calc(var(--s) * .06),6px);
+  flex:none;margin:auto;display:grid;grid-template-columns:var(--gx) var(--bw);grid-template-rows:var(--gy) auto var(--gb);
+}
+.frame[data-mode="matrix"]{--gx:52px;--gy:36px}
+.frame[data-mode="graph"]{--gx:76px;--gb:66px}
+.board{
+  grid-area:2 / 2;position:relative;width:var(--bw);aspect-ratio:var(--cols) / var(--rows);container-type:inline-size;
+  display:grid;grid-template-columns:repeat(var(--cols),1fr);grid-template-rows:repeat(var(--rows),1fr);
+  gap:var(--gap);touch-action:none;
+}
+.stage.scrollable .board{touch-action:pan-x pan-y}
+.board.editing{outline:1px dashed color-mix(in srgb,var(--accent) 65%,transparent);outline-offset:10px}
+.edge{position:absolute;z-index:3;pointer-events:none;background:var(--accent);border-radius:2px}
+.edge.top{left:0;right:0;top:-6px;height:3px}
+.edge.bottom{left:0;right:0;bottom:-6px;height:3px}
+.edge.left{top:0;bottom:0;left:-6px;width:3px}
+.edge.right{top:0;bottom:0;right:-6px;width:3px}
+.cell{
+  --cw:calc(100cqw / var(--cols));
+  position:relative;border-radius:min(4px,calc(var(--cw) * .07));overflow:hidden;cursor:pointer;outline:none;
+  background:transparent;box-shadow:inset 0 0 0 1px var(--line);
+  transition:transform .15s,background .15s,opacity .15s;
+  -webkit-user-select:none;user-select:none;
+}
+.cell:active{transform:scale(.97)}
+.cell:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cell.drop{outline:2px solid var(--accent);outline-offset:1px;transform:scale(1.04);z-index:2}
+.cell.lift{opacity:.28;transform:scale(.95)}
+
+.cell.empty::after{
+  content:"+";position:absolute;inset:0;display:grid;place-items:center;
+  font-size:calc(var(--cw) * .36);font-weight:200;color:var(--ink2);opacity:0;transition:opacity .15s;
+}
+@media (hover:hover){
+  .cell.empty:hover{background:var(--empty-hover)}
+  .cell.empty:hover::after{opacity:.6}
+  .cell:not(.empty){cursor:grab}
+}
+
+/* note: solid tile with text and a folded corner */
+.cell.note{
+  background:var(--surface);color:var(--on,var(--ink));
+  box-shadow:inset 0 0 0 1px var(--line2);
+}
+.cell.note.colored{
+  background:color-mix(in srgb,var(--c) calc(var(--a) * 100%),var(--surface));
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 55%,transparent);
+}
+.cell.note .txt{
+  position:absolute;inset:calc(var(--cw) * .1);overflow:hidden;
+  font-size:clamp(6.5px,calc(var(--cw) * .2),16px);line-height:1.4;font-weight:500;letter-spacing:.02em;
+  word-break:break-all;
+}
+.cell.note .txt.ph{opacity:.42}
+.cell.note.w::after{
+  content:"";position:absolute;right:0;bottom:0;width:calc(var(--cw) * .17);aspect-ratio:1;
+  background:linear-gradient(135deg,transparent 50%,color-mix(in srgb,currentColor 26%,transparent) 50%);
+}
+
+/* grid: framed tile containing a miniature of the lower level */
+.cell.grid{
+  background:color-mix(in srgb,var(--c,var(--ink)) calc(var(--a,.09) * 100%),var(--surface));color:var(--on,var(--ink));
+  box-shadow:inset 0 0 0 max(1.5px,calc(var(--cw) * .03)) var(--c,var(--ink));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:calc(var(--cw) * .12);gap:calc(var(--cw) * .05);
+}
+.miniwrap{width:100%;aspect-ratio:1;flex:none;display:grid;place-items:center}
+.mini{
+  width:calc(100% * min(1, var(--cols) / var(--rows)));aspect-ratio:var(--cols) / var(--rows);display:grid;
+  grid-template-columns:repeat(var(--cols),1fr);grid-template-rows:repeat(var(--rows),1fr);
+  box-shadow:inset 0 0 0 1px var(--line2);
+  background-image:linear-gradient(to right,var(--line) 1px,transparent 1px),linear-gradient(to bottom,var(--line) 1px,transparent 1px);
+  background-size:calc(100% / var(--cols)) calc(100% / var(--rows));
+  background-color:color-mix(in srgb,var(--surface) 75%,transparent);
+  overflow:hidden;
+}
+.mini i{margin:.5px;background:color-mix(in srgb,var(--c) calc(max(var(--a,1),.35) * 100%),var(--surface))}
+.mini i.g{background:color-mix(in srgb,var(--c) 26%,transparent);outline:1px solid var(--c);outline-offset:-1px}
+.cell.grid.t .miniwrap{width:66%}
+.cell.grid .ttl{
+  max-width:100%;font-size:clamp(6.5px,calc(var(--cw) * .15),12px);font-weight:500;line-height:1.2;letter-spacing:.03em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+.ghost{position:absolute;z-index:20;pointer-events:none;transform:scale(1.05);box-shadow:0 18px 34px rgba(0,0,0,.26);transition:none;opacity:.97}
+.board.dragging{cursor:grabbing}
+.intro .cell{animation:rise .6s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:min(calc(var(--i) * 9ms),450ms)}
+@keyframes rise{from{opacity:0;transform:scale(.93)}}
+
+/* bottom bar */
+.bar{display:flex;flex-direction:column;gap:10px;padding:10px 0 14px}
+.viewbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.dims{font:300 21px var(--font-ui);letter-spacing:.06em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dims .dl{font-size:11px;font-weight:400;color:var(--ink2);letter-spacing:.08em;margin-right:5px}
+.dims .x{margin:0 8px;color:var(--ink2)}
+.modebtn{display:flex;align-items:center;gap:9px;height:42px;padding:0 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:3px;font-size:13px;font-weight:500;letter-spacing:.06em}
+.modebtn:active{background:var(--empty-hover)}
+.editbar{display:flex;flex-direction:column;gap:10px}
+.erow{display:flex;align-items:center;gap:8px}
+.erow .dims{flex:1;min-width:0;text-align:center;font-size:19px}
+.lockbtn{flex:none;display:flex;align-items:center;gap:6px;height:36px;padding:0 10px;border:1px solid var(--line2);border-radius:3px;background:transparent;font-size:12px;font-weight:500;letter-spacing:.05em}
+.lockbtn.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.lockbtn #lockIcon{display:grid}
+.editdone{flex:none;border:0;background:transparent;color:var(--accent);font-size:15px;font-weight:500;letter-spacing:.06em;padding:8px 2px}
+.step{
+  flex:none;width:52px;height:50px;border:1px solid var(--line2);border-radius:3px;background:transparent;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:10.5px;letter-spacing:.06em;
+}
+.step svg{display:block}
+.step.rm{color:var(--danger);border-color:color-mix(in srgb,var(--danger) 55%,transparent)}
+.step.add{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.step:active:not(:disabled){filter:brightness(.92)}
+.step:disabled{opacity:.3;cursor:default}
+.picker{flex:1;min-width:0;display:flex;gap:6px}
+.pk{
+  flex:1;min-width:0;height:50px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  border:1px solid var(--line2);border-radius:3px;background:transparent;color:var(--ink2);font-size:10.5px;letter-spacing:.03em;white-space:nowrap;
+}
+.pk[aria-checked="true"]{border-color:var(--accent);color:var(--ink);background:color-mix(in srgb,var(--accent) 14%,transparent);box-shadow:inset 0 0 0 1px var(--accent)}
+.hint{margin:0;font-size:11.5px;color:var(--ink2);text-align:center;line-height:1.7;letter-spacing:.04em}
+.hint b{color:var(--ink);font-weight:500}
+
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(10,12,14,.45);opacity:0;pointer-events:none;transition:opacity .25s;z-index:30}
+.scrim.open{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;left:0;right:0;bottom:0;margin:0 auto;width:min(100%,560px);
+  max-height:calc(var(--vvh,100dvh) - 16px);overflow:auto;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-bottom:0;border-radius:6px 6px 0 0;
+  padding:0 18px calc(20px + env(safe-area-inset-bottom,0px));
+  box-shadow:0 -12px 40px rgba(0,0,0,.22);z-index:40;
+  transform:translateY(105%);visibility:hidden;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility 0s .3s;
+  -webkit-user-select:auto;user-select:auto;
+}
+.sheet.open{transform:none;visibility:visible;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility 0s}
+.cbar{height:3px;margin:0 -18px 14px;background:var(--cbar,transparent);border-radius:6px 6px 0 0;transition:background .2s}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.seg{display:flex;gap:20px}
+.seg button{border:0;background:transparent;color:var(--ink2);font-size:14px;font-weight:500;letter-spacing:.08em;padding:8px 0;border-bottom:2px solid transparent}
+.seg button.on{color:var(--ink);border-bottom-color:var(--ink)}
+.done{border:0;background:transparent;color:var(--accent);font-size:15px;font-weight:500;letter-spacing:.06em;padding:8px 2px}
+.field{
+  display:block;width:100%;border:1px solid var(--line2);
+  background:color-mix(in srgb,var(--cc,var(--surface)) 12%,var(--bg));color:var(--ink);
+  border-radius:3px;padding:11px 14px;font:inherit;font-size:16px;line-height:1.7;letter-spacing:.02em;outline:none;
+  -webkit-user-select:text;user-select:text;
+}
+textarea.field{resize:none}
+.field:focus{border-color:var(--cf,var(--accent))}
+.row-label{font-size:12px;color:var(--ink2);letter-spacing:.08em;margin:18px 0 8px}
+.swatches{display:flex;flex-wrap:wrap;gap:11px;padding:5px}
+.sw{
+  width:30px;height:30px;border-radius:2px;border:0;padding:0;background:var(--c);position:relative;cursor:pointer;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.14);display:block;
+}
+.sw.on::after{content:"";position:absolute;inset:-5px;border:1.5px solid var(--ink);border-radius:3px}
+.sw.none{background:var(--surface);box-shadow:inset 0 0 0 1px var(--line2)}
+.sw.none::before{content:"";position:absolute;left:50%;top:50%;width:120%;height:1px;background:var(--ink2);transform:translate(-50%,-50%) rotate(45deg)}
+.sw.custom{background:var(--surface);box-shadow:inset 0 0 0 1px var(--line2)}
+.sw.custom::before{content:"+";position:absolute;inset:0;display:grid;place-items:center;font-size:20px;font-weight:300;color:var(--ink2)}
+.sw.custom.on{background:var(--c)}
+.sw.custom.on::before{content:none}
+.sw.custom input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;border:0;padding:0}
+.sheet-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.btn{flex:1;min-height:46px;border-radius:3px;border:1px solid var(--line2);background:transparent;color:var(--ink);font-size:14px;font-weight:500;letter-spacing:.06em;padding:0 14px}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink);flex-basis:100%}
+.btn.ghosty:active{background:var(--empty-hover)}
+.btn.armed{background:var(--danger);border-color:var(--danger);color:#fff}
+
+.toast{
+  position:fixed;left:50%;top:calc(14px + env(safe-area-inset-top,0px));transform:translate(-50%,-12px);
+  max-width:min(92vw,420px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:3px;
+  font-size:13px;line-height:1.6;letter-spacing:.03em;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:60;text-align:center;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* vaults */
+.vaultrow{position:relative;display:flex;align-items:stretch;gap:8px;height:42px;border-top:1px solid var(--line2);border-bottom:1px solid var(--line)}
+.vtabs{position:relative;flex:1;min-width:0;display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none}
+.vtabs::-webkit-scrollbar{display:none}
+.vtab{
+  flex:none;border:0;background:transparent;padding:0 12px;font-size:13.5px;letter-spacing:.05em;color:var(--ink2);
+  max-width:11em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-bottom:2px solid transparent;
+}
+.vtab:first-child{padding-left:2px}
+.vtab.cur{color:var(--ink);font-weight:500;border-bottom-color:var(--ink)}
+.vtools{display:flex;align-items:center;gap:6px;flex:none}
+.menu{
+  position:absolute;right:0;top:calc(100% + 6px);min-width:196px;padding:4px;z-index:25;
+  background:var(--surface);border:1px solid var(--line2);border-radius:4px;box-shadow:0 14px 34px rgba(0,0,0,.2);
+}
+.menu button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:11px 12px;font-size:14px;letter-spacing:.04em;border-radius:2px}
+.menu button:hover,.menu button:active{background:var(--empty-hover)}
+.menu button.danger{color:var(--danger)}
+.msep{border:0;border-top:1px solid var(--line);margin:4px 6px}
+
+/* dialog */
+.dlg-scrim{position:fixed;inset:0;background:rgba(10,12,14,.5);opacity:0;pointer-events:none;transition:opacity .2s;z-index:50}
+.dlg-scrim.open{opacity:1;pointer-events:auto}
+.dlg{
+  position:fixed;left:50%;top:34%;width:min(92vw,380px);transform:translate(-50%,-46%);opacity:0;visibility:hidden;
+  background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:4px;padding:20px 20px 18px;z-index:55;
+  box-shadow:0 24px 60px rgba(0,0,0,.35);transition:opacity .2s,transform .2s,visibility 0s .2s;
+  -webkit-user-select:auto;user-select:auto;
+}
+.dlg.open{opacity:1;visibility:visible;transform:translate(-50%,-50%);transition:opacity .2s,transform .2s,visibility 0s}
+.dlg-title{margin:0 0 8px;font-size:16px;font-weight:500;letter-spacing:.06em}
+.dlg-msg{margin:0 0 4px;font-size:13.5px;line-height:1.7;color:var(--ink2);white-space:pre-line}
+.dlg-actions{display:flex;gap:10px;margin-top:18px}
+.dlg-actions .btn{min-height:44px}
+.dlg-actions .btn.primary{flex-basis:auto}
+.btn.danger{background:var(--danger);border-color:var(--danger);color:#fff}
+
+/* transparency slider */
+.row-label.first{margin-top:0}
+.alpha{display:flex;align-items:center;gap:12px;margin-top:14px;transition:opacity .2s}
+.alpha.off{opacity:.35;pointer-events:none}
+.alpha-lbl{font-size:12px;color:var(--ink2);letter-spacing:.08em;flex:none}
+.alpha output{width:3em;text-align:right;font-size:13px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.alpha input[type=range]{flex:1;min-width:0;-webkit-appearance:none;appearance:none;height:26px;margin:0;background:transparent;cursor:pointer}
+.alpha input[type=range]::-webkit-slider-runnable-track{
+  height:8px;border-radius:1px;box-shadow:inset 0 0 0 1px var(--line2);
+  background:linear-gradient(to right,var(--cf,var(--accent)),color-mix(in srgb,var(--cf,var(--accent)) 8%,var(--surface)));
+}
+.alpha input[type=range]::-moz-range-track{
+  height:8px;border-radius:1px;box-shadow:inset 0 0 0 1px var(--line2);
+  background:linear-gradient(to right,var(--cf,var(--accent)),color-mix(in srgb,var(--cf,var(--accent)) 8%,var(--surface)));
+}
+.alpha input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:22px;height:22px;margin-top:-7px;border:0;border-left:8px solid transparent;border-right:8px solid transparent;
+  background:var(--ink);background-clip:padding-box;border-radius:0;
+}
+.alpha input[type=range]::-moz-range-thumb{
+  width:22px;height:22px;border:0;border-left:8px solid transparent;border-right:8px solid transparent;
+  background:var(--ink);background-clip:padding-box;border-radius:0;
+}
+
+/* ---- mode row ---- */
+.moderow{display:flex;align-items:center;justify-content:space-between;gap:10px;height:42px}
+.modesel{display:flex;align-items:center;gap:10px;min-width:0}
+.modesel>span{font-size:12px;color:var(--ink2);letter-spacing:.08em;flex:none}
+#modeSel{
+  -webkit-appearance:none;appearance:none;height:34px;min-width:124px;padding:0 32px 0 12px;
+  border:1px solid var(--line2);border-radius:3px;background-color:transparent;color:var(--ink);
+  font:500 13px var(--font-ui);letter-spacing:.06em;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);
+  background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;
+}
+#modeSel:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#modeSel option{color:var(--ink);background:var(--surface)}
+.moderow .dims{font-size:15px}
+.moderow .dims .dl{font-size:10.5px;margin-right:4px}
+.moderow .dims .x{margin:0 5px}
+
+/* ---- ListMode: cells line up from the left; empty slots are only placeholders ---- */
+.board.list .cell.empty{box-shadow:none;outline:1px dashed var(--line2);outline-offset:-1px;cursor:default}
+.board.list .cell.empty::after{content:none}
+.board.list .cell.empty:hover{background:transparent}
+.board.list .cell[data-n]::before{
+  content:attr(data-n);position:absolute;left:calc(var(--cw) * .1);bottom:calc(var(--cw) * .07);z-index:1;pointer-events:none;
+  font:300 clamp(6px,calc(var(--cw) * .15),10px)/1 var(--font-ui);letter-spacing:.06em;opacity:.55;
+}
+.cell.grabbing{outline:2px solid var(--accent);outline-offset:1px;transform:scale(1.03)}
+
+/* ---- MatrixMode: axis labels outside the grid ---- */
+.colhead{
+  grid-area:1 / 2;width:var(--bw);display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:var(--gap);
+  padding-bottom:6px;margin-bottom:6px;border-bottom:1px solid var(--line2);
+}
+.rowhead{
+  grid-area:2 / 1;display:grid;grid-template-rows:repeat(var(--rows),1fr);gap:var(--gap);
+  padding-right:6px;margin-right:6px;border-right:1px solid var(--line2);
+}
+.frame:not([data-mode="matrix"]) .colhead,.frame:not([data-mode="matrix"]) .rowhead{display:none}
+.lab{
+  min-width:0;min-height:0;border:0;background:transparent;padding:0 2px;display:flex;align-items:center;border-radius:2px;
+  font:500 11px/1.25 var(--font-ui);letter-spacing:.03em;color:var(--ink);
+}
+.colhead .lab{justify-content:center;text-align:center;align-items:flex-end}
+.rowhead .lab{justify-content:flex-end;text-align:right}
+.lab span{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;word-break:break-all}
+.lab:active{background:var(--empty-hover)}
+.lab.empty{box-shadow:inset 0 0 0 1px var(--line2)}
+.lab.empty::after{content:"＋";margin:auto;font-size:11px;font-weight:300;color:var(--ink2);opacity:.6}
+.lab{cursor:grab;touch-action:none}
+.lab.drop{box-shadow:inset 0 0 0 2px var(--accent)}
+.labghost{position:fixed;z-index:60;pointer-events:none;background:var(--surface);box-shadow:0 10px 26px rgba(0,0,0,.28),inset 0 0 0 1px var(--line2);opacity:.96;display:flex;align-items:center;border-radius:2px;padding:0 2px}
+
+/* ---- PriorityMode: the cell's own background IS the priority signal — every cell, filled or
+   empty, is tinted from strong (high priority) to faint (low priority) by its position. A cell's
+   own chosen colour, if any, blends over that tint by its own alpha rather than replacing it, so
+   category colour and priority read together at a glance. A legend in the control panel (not on
+   the grid) spells out what the shade means, the same way for every shape. ---- */
+/* Priority mode otherwise looks exactly like Free mode — same fill, same rings, same shape.
+   Empty cells carry the full priority tone as their background (there's no text to protect, so the
+   whole tile can read as a heatmap swatch). Filled cells keep their normal fill and simply gain one
+   extra, slightly heavier ring tinted by the position's priority, on top of whatever ring they'd
+   already have (a category-colour ring, or a sub-grid marker) — so priority reads as one added
+   accent rather than a different design. */
+.board[class*="prio-"] .cell.empty{background:var(--pr,var(--surface));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 18%,transparent)}
+.board[class*="prio-"] .cell.note{box-shadow:inset 0 0 0 1px var(--line2),inset 0 0 0 3px var(--pr,transparent)}
+.board[class*="prio-"] .cell.note.colored{box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 55%,transparent),inset 0 0 0 3px var(--pr,transparent)}
+.board[class*="prio-"] .cell.grid{box-shadow:inset 0 0 0 max(1.5px,calc(var(--cw) * .03)) var(--c,var(--ink)),inset 0 0 0 3px var(--pr,transparent)}
+.plegend{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:2px}
+.plegend-head{border:0;background:transparent;color:var(--ink2);font-size:12px;letter-spacing:.08em;padding:2px 6px;border-radius:2px}
+.plegend-head:active{background:var(--empty-hover)}
+.plegend-head.empty{opacity:.55}
+.plegend-row{display:flex;align-items:center;gap:8px;width:100%}
+.plegend-grad{flex:1;height:14px;border-radius:2px;box-shadow:inset 0 0 0 1px var(--line2)}
+.plegend-end{flex:none;border:0;background:transparent;color:var(--ink);font-size:12px;font-weight:500;letter-spacing:.04em;padding:4px 6px;border-radius:2px;max-width:6em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plegend-end:active{background:var(--empty-hover)}
+.plegend-end.empty{color:var(--ink2);font-weight:400}
+
+/* ---- GraphMode: an L-shaped axis (left and bottom) with a heading and low / high text ---- */
+.gaxis{position:relative;min-width:0;min-height:0}
+.ay{grid-area:2 / 1;margin-right:7px;padding-right:9px;display:grid;grid-template-columns:24px 1fr}
+.ax{grid-area:3 / 2;margin-top:7px;padding-top:9px;display:flex;flex-direction:column;gap:4px}
+.ay .yticks{grid-column:2;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;min-height:0}
+.ay .glab.t{grid-column:1;grid-row:1;justify-self:center;align-self:center;writing-mode:vertical-rl;max-height:100%}
+.ax .xticks{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ax .glab.t{align-self:center}
+.gline{position:absolute;background:var(--ink);pointer-events:none}
+.ay .gline{right:0;top:0;bottom:0;width:1.5px}
+.ax .gline{left:0;right:0;top:0;height:1.5px}
+/* GraphMode's two axes meet at a corner, so each line overshoots slightly there to form that joint.
+   Priority shows only one axis at a time with no partner to meet, so its line stays flush instead. */
+.frame[data-mode="graph"] .ay .gline{bottom:-7px}
+.frame[data-mode="graph"] .ax .gline{left:-7px}
+.ay .gline::before,.ax .gline::before{content:"";position:absolute;width:8px;height:8px;transform:translate(-50%,-50%) rotate(45deg)}
+.ay .gline::before{left:50%;top:4px;border-top:1.5px solid var(--ink);border-left:1.5px solid var(--ink)}
+.ax .gline::before{left:calc(100% - 4px);top:50%;border-top:1.5px solid var(--ink);border-right:1.5px solid var(--ink)}
+.glab{
+  min-width:0;border:0;background:transparent;padding:2px 4px;border-radius:2px;
+  font:500 11px/1.25 var(--font-ui);letter-spacing:.04em;color:var(--ink);
+}
+.glab.t{font-size:12px;letter-spacing:.1em}
+.glab span{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;word-break:break-all}
+.glab:active{background:var(--empty-hover)}
+.glab.empty{box-shadow:inset 0 0 0 1px var(--line2);color:var(--ink2)}
+.glab.empty::after{content:attr(data-ph);font-weight:400;opacity:.75}
+.yticks .glab{text-align:right;max-width:100%}
+
+/* ---- mode controls in the bottom bar ---- */
+.viewbar{justify-content:center}
+.listbar{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.colstep{display:flex;align-items:center;gap:8px}
+.colstep .lbl{font-size:12px;color:var(--ink2);letter-spacing:.08em}
+.colstep button{width:40px;height:40px;border:1px solid var(--line2);border-radius:3px;background:transparent;font:300 22px/1 var(--font-ui);display:grid;place-items:center}
+.colstep button:active:not(:disabled){background:var(--empty-hover)}
+.colstep button:disabled{opacity:.3;cursor:default}
+.colstep output{min-width:2.4em;text-align:center;font:300 22px var(--font-ui);font-variant-numeric:tabular-nums}
+.modebtn.primary{background:var(--ink);color:var(--bg)}
+#transposeBtn{
+  grid-area:1 / 1;align-self:stretch;justify-self:stretch;margin:0 6px 6px 0;border:1px solid var(--line2);border-radius:3px;
+  background:transparent;color:var(--ink);display:grid;place-items:center;
+}
+#transposeBtn:active{background:var(--empty-hover)}
+.priobar{display:flex;flex-direction:column;gap:8px}
+.pshapes{display:flex;gap:6px}
+.pshapes .pk{height:40px;flex-direction:row;gap:8px;font-size:12px}
+.pg{display:block;flex:none;width:18px;height:18px;border:1px solid var(--line2)}
+.pg-v{background:linear-gradient(to bottom,var(--accent),color-mix(in srgb,var(--accent) 8%,var(--surface)))}
+.pg-h{background:linear-gradient(to right,var(--accent),color-mix(in srgb,var(--accent) 8%,var(--surface)))}
+.pg-c{background:radial-gradient(circle farthest-corner,var(--accent),color-mix(in srgb,var(--accent) 8%,var(--surface)))}
+.pswrow{display:flex;align-items:center;gap:8px}
+.pswrow .lbl{font-size:12px;color:var(--ink2);letter-spacing:.08em;flex:none}
+.pswatches{display:flex;gap:5px;overflow-x:auto;padding:4px;scrollbar-width:none}
+.pswatches::-webkit-scrollbar{display:none}
+.psw{flex:none;width:20px;height:20px;border:0;border-radius:2px;background:var(--c);position:relative;padding:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.14)}
+.psw.on::after{content:"";position:absolute;inset:-3px;border:1.5px solid var(--ink);border-radius:3px}
+
+@media (prefers-reduced-motion:reduce){
+  .intro .cell,.brand{animation:none}
+  *{transition-duration:0s!important}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand" aria-label="Grids">
+      <svg class="mark" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+        <rect x=".5" y=".5" width="6" height="6"/><rect x="8" y=".5" width="6" height="6" fill="currentColor"/><rect x="15.5" y=".5" width="6" height="6"/>
+        <rect x=".5" y="8" width="6" height="6"/><rect x="8" y="8" width="6" height="6"/><rect x="15.5" y="8" width="6" height="6"/>
+        <rect x=".5" y="15.5" width="6" height="6"/><rect x="8" y="15.5" width="6" height="6"/><rect x="15.5" y="15.5" width="6" height="6"/>
+      </svg>
+      <span class="word">Grids</span>
+    </div>
+    <span class="tag">階層でひろがるメモ</span>
+  </header>
+
+  <div class="vaultrow">
+    <nav id="vtabs" class="vtabs" role="tablist" aria-label="保管庫"></nav>
+    <div class="vtools">
+      <button id="vAdd" class="ico" aria-label="保管庫を追加">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <button id="vImport" class="ico" aria-label="保管庫を読み込む（JSONファイル）" title="読み込む（JSON）">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M12 4l-4 4M12 4l4 4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+      </button>
+      <button id="vMenu" class="ico" aria-label="保管庫の管理" aria-haspopup="menu" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg>
+      </button>
+    </div>
+    <input type="file" id="importFile" accept="application/json,.json" hidden>
+    <div id="menu" class="menu" role="menu" hidden>
+      <button id="mRename" role="menuitem">名前を変更</button>
+      <button id="mExport" role="menuitem">書き出す…</button>
+      <hr class="msep">
+      <button id="mDelete" role="menuitem" class="danger">この保管庫を削除</button>
+    </div>
+    <div id="exportMenu" class="menu" role="menu" hidden>
+      <button data-f="csv" role="menuitem">CSV（表計算ソフト向け）</button>
+      <button data-f="md" role="menuitem">Markdown（.md）</button>
+      <button data-f="txt" role="menuitem">テキスト（.txt）</button>
+      <hr class="msep">
+      <button data-f="json" role="menuitem">JSON（バックアップ・全項目）</button>
+    </div>
+  </div>
+
+  <div class="crumbrow">
+    <button id="up" class="ico" aria-label="ひとつ上の階層へ" style="visibility:hidden">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <nav id="crumbs" class="crumbs" aria-label="階層"></nav>
+    <button id="editParent" class="pill" hidden>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/></svg>
+      このマスを編集
+    </button>
+  </div>
+
+  <div class="moderow">
+    <label class="modesel"><span>モード</span>
+      <select id="modeSel" aria-label="モード">
+        <option value="free">Free</option>
+        <option value="list">List</option>
+        <option value="matrix">Matrix</option>
+        <option value="graph">Graph</option>
+        <option value="priority">Priority</option>
+      </select>
+    </label>
+    <div id="modeDims" class="dims" aria-live="polite"></div>
+  </div>
+
+  <main id="stage" class="stage">
+    <div id="frame" class="frame" data-mode="free" style="--cols:8;--rows:8">
+      <div id="colHead" class="colhead"></div>
+      <div id="rowHead" class="rowhead"></div>
+      <div id="gAy" class="gaxis ay">
+        <button class="glab t" data-g="yt" data-ph="見出し"><span></span></button>
+        <div class="yticks">
+          <button class="glab" data-g="ymax" data-ph="最大"><span></span></button>
+          <button class="glab" data-g="ymin" data-ph="最小"><span></span></button>
+        </div>
+        <i class="gline"></i>
+      </div>
+      <div id="gAx" class="gaxis ax">
+        <div class="xticks">
+          <button class="glab" data-g="xmin" data-ph="最小"><span></span></button>
+          <button class="glab" data-g="xmax" data-ph="最大"><span></span></button>
+        </div>
+        <button class="glab t" data-g="xt" data-ph="見出し"><span></span></button>
+        <i class="gline"></i>
+      </div>
+      <button id="transposeBtn" hidden aria-label="行と列を入れ替える（転置）" title="行と列を反転">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11M4 5l3-3M4 5l3 3"/><path d="M20 19H9M20 19l-3-3M20 19l-3 3"/></svg>
+      </button>
+      <div id="board" class="board intro"></div>
+    </div>
+  </main>
+
+  <footer class="bar">
+    <div id="prioBar" class="priobar" hidden>
+      <div id="pShapes" class="pshapes" role="radiogroup" aria-label="背景の形">
+        <button class="pk" role="radio" data-s="v" aria-checked="false"><i class="pg pg-v"></i><span>上下</span></button>
+        <button class="pk" role="radio" data-s="h" aria-checked="false"><i class="pg pg-h"></i><span>左右</span></button>
+        <button class="pk" role="radio" data-s="c" aria-checked="false"><i class="pg pg-c"></i><span>円</span></button>
+      </div>
+      <div class="pswrow"><span class="lbl">色</span><div id="pSwatches" class="pswatches"></div></div>
+      <div class="plegend">
+        <button id="pHead" class="plegend-head" aria-label="見出し"><span></span></button>
+        <div class="plegend-row">
+          <button id="pHigh" class="plegend-end" aria-label="濃い側の文字"><span></span></button>
+          <div id="pGrad" class="plegend-grad"></div>
+          <button id="pLow" class="plegend-end" aria-label="薄い側の文字"><span></span></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="viewBar" class="viewbar">
+      <button id="editModeBtn" class="modebtn">マスを編集</button>
+    </div>
+
+    <div id="listBar" class="listbar" hidden>
+      <div class="colstep">
+        <span class="lbl">横</span>
+        <button id="colDec" aria-label="横列を減らす">−</button>
+        <output id="colOut">8</output>
+        <button id="colInc" aria-label="横列を増やす">+</button>
+      </div>
+      <button id="listAdd" class="modebtn primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>追加
+      </button>
+    </div>
+
+    <div id="editBar" class="editbar" hidden>
+      <div class="erow">
+        <button id="lockBtn" class="lockbtn on" aria-pressed="true"><span id="lockIcon"></span><span id="lockLbl">縦横比ロック</span></button>
+        <div id="dimOut" class="dims" aria-live="polite"></div>
+        <button id="editDone" class="editdone">完了</button>
+      </div>
+      <div class="erow">
+        <button id="rmBtn" class="step rm" aria-label="選んだ位置のマスを削除">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg>削除
+        </button>
+        <div id="picker" class="picker" role="radiogroup" aria-label="追加・削除する位置"></div>
+        <button id="addBtn" class="step add" aria-label="選んだ位置にマスを追加">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>追加
+        </button>
+      </div>
+    </div>
+
+    <p id="hintView" class="hint"><b>タップ</b>で開く・読む　<b>長押し</b>で編集　<b>ドラッグ</b>で入れ替え</p>
+    <p id="hintMatrix" class="hint" hidden>ラベルをドラッグすると、行・列ごと入れ替わります。右上の反転ボタンで行と列を入れ替えられます</p>
+    <p id="hintList" class="hint" hidden>「追加」から入力すると左詰めで並びます。空にしたマスは詰められ、空の行は消えます</p>
+    <p id="hintEdit" class="hint" hidden>青い線の側に行・列を追加／削除します。削除する側のマスの中身は近くの空きへ移ります</p>
+  </footer>
+</div>
+
+<div id="scrim" class="scrim"></div>
+<section id="sheet" class="sheet" role="dialog" aria-modal="true" aria-label="マスの編集">
+  <div class="cbar"></div>
+  <div class="sheet-head">
+    <div class="seg" role="group" aria-label="マスの種類">
+      <button data-type="note">メモ</button>
+      <button data-type="grid">グリッド</button>
+    </div>
+    <button id="sheetDone" class="done">完了</button>
+  </div>
+  <div class="row-label first">タイトル</div>
+  <input id="sheetTitle" class="field" type="text" maxlength="80" placeholder="タイトル" autocomplete="off" enterkeyhint="next">
+  <div class="row-label">内容</div>
+  <textarea id="sheetText" class="field" rows="5" placeholder="内容を書く…"></textarea>
+  <div class="row-label">色</div>
+  <div id="swatches" class="swatches"></div>
+  <div id="alphaRow" class="alpha off">
+    <span class="alpha-lbl">透明度</span>
+    <input id="alpha" type="range" min="0" max="90" step="5" value="70" aria-label="色の透明度">
+    <output id="alphaOut" for="alpha">—</output>
+  </div>
+  <div class="sheet-actions">
+    <button id="openGrid" class="btn primary">このグリッドを開く</button>
+    <button id="clearCell" class="btn ghosty">このマスを空にする</button>
+  </div>
+</section>
+<div id="dlgScrim" class="dlg-scrim"></div>
+<div id="dlg" class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
+  <h2 id="dlgTitle" class="dlg-title"></h2>
+  <p id="dlgMsg" class="dlg-msg" hidden></p>
+  <input id="dlgInput" class="field" type="text" maxlength="24" autocomplete="off" hidden>
+  <div class="dlg-actions">
+    <button id="dlgCancel" class="btn">キャンセル</button>
+    <button id="dlgOk" class="btn primary">OK</button>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+
+(() => {
+'use strict';
+const KEY = 'grids:v1';
+const PALETTE = ['#2f3b47','#5d7284','#8fa7a3','#66786a','#a3a685','#c2ad78','#b58a6e','#9c6b6a','#8a7d99','#c9c4ba','#8b9299','#25282c'];
+const MIN = 1, MAX = 50, ROOT_SIZE = 8, CHILD_SIZE = 4, MAX_VAULTS = 20;
+const DEFAULT_ALPHA = 0.3, MIN_ALPHA = 0.1;
+const MODES = ['free', 'list', 'matrix', 'graph', 'priority'];
+const SHAPES = ['v', 'h', 'c'];
+const P_DEFAULT = '#5d7284';
+const P_STRONG = 0.55, P_WEAK = 0.05;  /* priority heatmap: strongest / weakest share of the base colour */
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const $ = s => document.querySelector(s);
+const stage = $('#stage'), frame = $('#frame'), board = $('#board'), colHead = $('#colHead'), rowHead = $('#rowHead');
+const crumbsEl = $('#crumbs'), upBtn = $('#up'), editBtn = $('#editParent'), toastEl = $('#toast');
+const scrim = $('#scrim'), sheet = $('#sheet'), titleIn = $('#sheetTitle'), ta = $('#sheetText'), swBox = $('#swatches');
+const alphaRow = $('#alphaRow'), alphaIn = $('#alpha'), alphaOut = $('#alphaOut');
+const openBtn = $('#openGrid'), clearBtn = $('#clearCell'), doneBtn = $('#sheetDone');
+const segs = [...document.querySelectorAll('.seg button')];
+const vtabs = $('#vtabs'), vAdd = $('#vAdd'), vImport = $('#vImport'), importFile = $('#importFile'), vMenu = $('#vMenu'), menu = $('#menu'), mRename = $('#mRename'), mDelete = $('#mDelete');
+const mExport = $('#mExport'), exportMenu = $('#exportMenu');
+const dlg = $('#dlg'), dlgScrim = $('#dlgScrim'), dlgTitle = $('#dlgTitle'), dlgMsg = $('#dlgMsg'), dlgInput = $('#dlgInput'), dlgOk = $('#dlgOk'), dlgCancel = $('#dlgCancel');
+const modeSel = $('#modeSel'), modeDims = $('#modeDims'), gAy = $('#gAy'), gAx = $('#gAx'), transposeBtn = $('#transposeBtn');
+const viewBar = $('#viewBar'), editBar = $('#editBar'), listBar = $('#listBar'), prioBar = $('#prioBar');
+const editModeBtn = $('#editModeBtn'), editDone = $('#editDone');
+const dimOut = $('#dimOut'), lockBtn = $('#lockBtn'), lockIcon = $('#lockIcon'), lockLbl = $('#lockLbl');
+const picker = $('#picker'), rmBtn = $('#rmBtn'), addBtn = $('#addBtn');
+const colDec = $('#colDec'), colInc = $('#colInc'), colOut = $('#colOut'), listAddBtn = $('#listAdd');
+const pShapes = $('#pShapes'), pSwatches = $('#pSwatches'), pGrad = $('#pGrad'), pHead = $('#pHead'), pHigh = $('#pHigh'), pLow = $('#pLow');
+const hintView = $('#hintView'), hintEdit = $('#hintEdit'), hintList = $('#hintList'), hintMatrix = $('#hintMatrix');
+
+/* ---------- data ---------- */
+const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-3);
+const fitLabels = (a, n) => Array.from({ length: n }, (_, i) => (Array.isArray(a) && typeof a[i] === 'string' ? a[i].slice(0, 24) : ''));
+const blankGraph = () => ({ xt: '', xmin: '', xmax: '', yt: '', ymin: '', ymax: '' });
+const cleanGraph = g => { const o = blankGraph(); Object.keys(o).forEach(k => { if (g && typeof g[k] === 'string') o[k] = g[k].slice(0, 24); }); return o; };
+const blankPAxis = () => ({ head: '', high: '', low: '' });
+const cleanPAxis = g => { const o = blankPAxis(); Object.keys(o).forEach(k => { if (g && typeof g[k] === 'string') o[k] = g[k].slice(0, 24); }); return o; };
+const newNode = (rows, cols = rows) => ({
+  mode: 'free', rows, cols, cells: new Array(rows * cols).fill(null),
+  colLabels: fitLabels(null, cols), rowLabels: fitLabels(null, rows), graph: blankGraph(), paxis: blankPAxis(), pshape: 'v', pcolor: P_DEFAULT
+});
+const newCell = () => ({ id: uid(), type: 'note', title: '', text: '', color: null, alpha: DEFAULT_ALPHA, child: null });
+const newVault = name => ({ id: uid(), name, root: newNode(ROOT_SIZE), path: [] });
+const esc = s => String(s).replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
+const isHex = v => typeof v === 'string' && /^#[0-9a-f]{6}$/i.test(v);
+const clampA = a => Math.min(1, Math.max(MIN_ALPHA, a));
+const cleanName = s => (typeof s === 'string' ? s.replace(/\s+/g, ' ').trim().slice(0, 24) : '');
+const isEmptyNode = n => n.cells.every(c => !c);
+const titleOf = c => ((c && c.title) || '').trim() || '無題';
+const syncLabels = n => { n.colLabels = fitLabels(n.colLabels, n.cols); n.rowLabels = fitLabels(n.rowLabels, n.rows); };
+
+/* colour helpers */
+function isDark() {
+  const t = document.documentElement.dataset.theme;
+  return t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+}
+const hexRGB = h => { const n = parseInt(h.slice(1), 16); return [n >> 16, (n >> 8) & 255, n & 255]; };
+const mixRGB = (a, b, p) => a.map((v, i) => v * p + b[i] * (1 - p));      /* a at share p over b */
+const surfaceRGB = () => (isDark() ? [26, 29, 32] : [246, 247, 247]);
+const inkRGB = () => (isDark() ? [231, 233, 234] : [26, 29, 32]);
+function textOn(rgb) {
+  const f = v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); };
+  const L = .2126 * f(rgb[0]) + .7152 * f(rgb[1]) + .0722 * f(rgb[2]);
+  return 1.05 / (L + .05) >= (L + .05) / .061 ? '#f6f6f4' : '#1a1d20';
+}
+const onColor = (hex, a = 1) => textOn(mixRGB(hexRGB(hex), surfaceRGB(), a));
+
+/* priority mode: how strong the background is at a given cell (1 = strongest). Rendered as one flat
+   dot per cell (not a smooth pixel gradient), so the colour steps cell by cell like a dot gradation. */
+function prioIntensity(n, r, k) {
+  if (n.pshape === 'h') return 1 - (k + .5) / n.cols;
+  if (n.pshape === 'c') {
+    const dx = k + .5 - n.cols / 2, dy = r + .5 - n.rows / 2;
+    return 1 - Math.hypot(dx, dy) / Math.hypot(n.cols / 2, n.rows / 2);
+  }
+  return 1 - (r + .5) / n.rows;
+}
+const rgbCSS = a => `rgb(${a.map(v => Math.round(Math.min(255, Math.max(0, v)))).join(',')})`;
+function prioBaseRGB(node, r, k) {
+  const t = prioIntensity(node, r, k);
+  return mixRGB(hexRGB(node.pcolor), surfaceRGB(), P_WEAK + (P_STRONG - P_WEAK) * t);
+}
+/* the flat priority tone at a cell's position, optionally with its own colour blended in — used
+   for the border ring of a filled cell, and as a full background wash for an empty one */
+function prioTone(node, i, color, alpha) {
+  const base = prioBaseRGB(node, Math.floor(i / node.cols), i % node.cols);
+  return color ? mixRGB(hexRGB(color), base, alpha) : base;
+}
+
+/* list mode: filled cells packed to the left, rows only as many as needed */
+function listReflow(node) {
+  const cells = node.cells.filter(Boolean);
+  const rows = Math.max(1, Math.min(MAX, Math.ceil(cells.length / node.cols)));
+  const out = new Array(rows * node.cols).fill(null);
+  cells.slice(0, out.length).forEach((c, i) => { out[i] = c; });
+  node.rows = rows; node.cells = out; syncLabels(node);
+}
+
+function cleanNode(n, depth = 0) {
+  const pick = v => { const x = parseInt(v, 10); return x > 0 ? Math.min(MAX, x) : 0; };
+  const rows = pick(n && n.rows) || pick(n && n.size) || CHILD_SIZE;   /* older data only had a square `size` */
+  const cols = pick(n && n.cols) || pick(n && n.size) || CHILD_SIZE;
+  const cells = new Array(rows * cols).fill(null);
+  if (n && Array.isArray(n.cells)) {
+    for (let i = 0; i < Math.min(n.cells.length, cells.length); i++) {
+      const c = n.cells[i];
+      if (!c || typeof c !== 'object') continue;
+      let title = typeof c.title === 'string' ? c.title : null;
+      let text = typeof c.text === 'string' ? c.text : '';
+      if (title === null) {
+        const lines = text.split('\n'), k = lines.findIndex(l => l.trim());
+        if (k >= 0) { title = lines[k].trim(); text = lines.slice(k + 1).join('\n').replace(/^\n+/, ''); }
+        else { title = ''; text = ''; }
+      }
+      const cell = {
+        id: typeof c.id === 'string' && c.id ? c.id : uid(),
+        type: c.type === 'grid' ? 'grid' : 'note',
+        title: title.slice(0, 80),
+        text,
+        color: isHex(c.color) ? c.color.toLowerCase() : null,
+        alpha: typeof c.alpha === 'number' && isFinite(c.alpha) ? clampA(c.alpha) : DEFAULT_ALPHA,
+        child: null
+      };
+      if (c.child && depth < 40) cell.child = cleanNode(c.child, depth + 1);
+      if (cell.type === 'grid' && !cell.child) cell.child = newNode(CHILD_SIZE);
+      cells[i] = cell;
+    }
+  }
+  const node = {
+    mode: MODES.includes(n && n.mode) ? n.mode : 'free',
+    rows, cols, cells,
+    colLabels: fitLabels(n && n.colLabels, cols),
+    rowLabels: fitLabels(n && n.rowLabels, rows),
+    graph: cleanGraph(n && n.graph),
+    paxis: cleanPAxis(n && n.paxis),
+    pshape: SHAPES.includes(n && n.pshape) ? n.pshape : 'v',
+    pcolor: isHex(n && n.pcolor) ? n.pcolor.toLowerCase() : P_DEFAULT
+  };
+  if (node.mode === 'list') listReflow(node);
+  return node;
+}
+
+const cleanPath = p => (Array.isArray(p) ? p.filter(x => typeof x === 'string') : []);
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) {
+      const d = JSON.parse(raw);
+      if (Array.isArray(d.vaults) && d.vaults.length) {
+        const vaults = d.vaults.slice(0, MAX_VAULTS).map((v, k) => ({
+          id: typeof v.id === 'string' && v.id ? v.id : uid(),
+          name: cleanName(v.name) || `保管庫 ${k + 1}`,
+          root: v.root ? cleanNode(v.root) : newNode(ROOT_SIZE),
+          path: cleanPath(v.path)
+        }));
+        return { vaults, cur: vaults.some(v => v.id === d.cur) ? d.cur : vaults[0].id };
+      }
+      if (d.root) {
+        const v = { id: uid(), name: '保管庫 1', root: cleanNode(d.root), path: cleanPath(d.path) };
+        return { vaults: [v], cur: v.id };
+      }
+    }
+  } catch (e) {}
+  const v = newVault('保管庫 1');
+  return { vaults: [v], cur: v.id };
+}
+const S = load();
+const V = () => S.vaults.find(v => v.id === S.cur) || S.vaults[0];
+
+let saveT = null, warned = false;
+function save() { clearTimeout(saveT); saveT = setTimeout(flush, 250); }
+function flush() {
+  try { localStorage.setItem(KEY, JSON.stringify({ v: 3, vaults: S.vaults, cur: S.cur })); }
+  catch (e) { if (!warned) { warned = true; toast('この環境では保存できません。開いている間だけ保持されます'); } }
+}
+addEventListener('pagehide', flush);
+document.addEventListener('visibilitychange', () => { if (document.hidden) flush(); });
+
+/* ---------- navigation ---------- */
+function resolve() {
+  const v = V(), nodes = [v.root], cells = [];
+  let node = v.root, valid = 0;
+  for (const id of v.path) {
+    const c = node.cells.find(x => x && x.id === id);
+    if (!c || c.type !== 'grid' || !c.child) break;
+    cells.push(c); node = c.child; nodes.push(node); valid++;
+  }
+  if (valid !== v.path.length) v.path = v.path.slice(0, valid);
+  return { nodes, cells, node };
+}
+
+/* ---------- render ---------- */
+function miniHTML(ch) {
+  let h = '';
+  ch.cells.forEach((c, i) => {
+    if (!c) return;
+    h += `<i class="${c.type === 'grid' ? 'g' : ''}" style="grid-area:${Math.floor(i / ch.cols) + 1}/${(i % ch.cols) + 1};--c:${c.color || 'var(--ink2)'};--a:${c.color ? c.alpha : 1}"></i>`;
+  });
+  return `<div class="miniwrap"><div class="mini" style="--cols:${ch.cols};--rows:${ch.rows}">${h}</div></div>`;
+}
+
+function cellHTML(c, i, ctx) {
+  const node = ctx.node;
+  if (!c) {
+    const pr = ctx.prio ? `--pr:${rgbCSS(prioTone(node, i, null, 1))};` : '';
+    return `<div class="cell empty" data-i="${i}" role="button" tabindex="-1" style="${pr}--i:${i}" aria-label="空のマス ${i + 1}"></div>`;
+  }
+  const base = `data-i="${i}" role="button" tabindex="0"${ctx.list ? ` data-n="${i + 1}"` : ''}`;
+  const ttl = c.title.trim(), body = c.text.trim();
+  let on = c.color ? onColor(c.color, c.alpha) : null;
+  const pr = ctx.prio ? `--pr:${rgbCSS(prioTone(node, i, c.color, c.alpha))};` : '';
+  const cs = (c.color ? `--c:${c.color};--a:${c.alpha};` : '') + (on ? `--on:${on};` : '') + pr + `--i:${i}`;
+  if (c.type === 'grid') {
+    const t = ctx.maxd <= 8 && ttl;
+    return `<div class="cell grid${c.color ? ' colored' : ''}${t ? ' t' : ''}" ${base} style="${cs}" aria-label="グリッド ${esc(ttl || '無題')}">${miniHTML(c.child)}${t ? `<div class="ttl">${esc(ttl)}</div>` : ''}</div>`;
+  }
+  return `<div class="cell note${c.color ? ' colored' : ''}${body ? ' w' : ''}" ${base} style="${cs}" aria-label="メモ ${esc(ttl || '無題')}"><div class="txt${ttl ? '' : ' ph'}">${esc(ttl || (body ? '無題' : ''))}</div></div>`;
+}
+
+function headsHTML(node) {
+  const mk = (arr, ax, label) => arr.map((l, i) =>
+    `<button class="lab${l ? '' : ' empty'}" data-ax="${ax}" data-i="${i}" aria-label="${label} ${i + 1}"><span>${esc(l)}</span></button>`).join('');
+  colHead.innerHTML = mk(node.colLabels, 'c', '横軸の指標');
+  rowHead.innerHTML = mk(node.rowLabels, 'r', '縦軸の指標');
+}
+
+function renderGraph(node) {
+  [gAy, gAx].forEach(root => root.querySelectorAll('.glab').forEach(b => {
+    const v = node.graph[b.dataset.g] || '';
+    b.classList.toggle('empty', !v);
+    b.firstElementChild.textContent = v;
+  }));
+  gAy.hidden = gAx.hidden = node.mode !== 'graph';
+}
+
+function render() {
+  const r = resolve(), node = r.node;
+  if (E.node !== node) { E.node = node; if (node.rows !== node.cols) E.lock = false; }
+  const list = node.mode === 'list', prio = node.mode === 'priority', matrix = node.mode === 'matrix';
+  const editing = E.on && !list;
+  frame.style.setProperty('--cols', node.cols);
+  frame.style.setProperty('--rows', node.rows);
+  frame.dataset.mode = node.mode;
+  board.style.setProperty('--pbase', node.pcolor);
+  board.classList.toggle('editing', editing);
+  board.classList.toggle('list', list);
+  SHAPES.forEach(s => board.classList.toggle('prio-' + s, prio && node.pshape === s));
+  const ctx = { node, list, prio, maxd: Math.max(node.rows, node.cols) };
+  let h = '';
+  for (let i = 0; i < node.cells.length; i++) h += cellHTML(node.cells[i], i, ctx);
+  board.innerHTML = h + markersHTML(editing);
+  if (matrix) headsHTML(node); else { colHead.innerHTML = ''; rowHead.innerHTML = ''; }
+  renderGraph(node);
+  transposeBtn.hidden = node.mode !== 'matrix';
+  renderCrumbs(r);
+  renderBar(node, editing);
+  requestAnimationFrame(updateScrollable);
+}
+let rq = 0;
+function scheduleRender() { if (rq) return; rq = requestAnimationFrame(() => { rq = 0; render(); }); }
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => render()); } catch (e) {}
+
+/* the board scrolls once it no longer fits at the minimum cell size */
+function updateScrollable() {
+  stage.classList.toggle('scrollable', stage.scrollWidth > stage.clientWidth + 1 || stage.scrollHeight > stage.clientHeight + 1);
+}
+if (window.ResizeObserver) { const ro = new ResizeObserver(updateScrollable); ro.observe(stage); ro.observe(frame); }
+
+function renderCrumbs(r) {
+  const v = V();
+  const items = [{ d: 0, label: v.name }];
+  r.cells.forEach((c, k) => items.push({ d: k + 1, label: titleOf(c) }));
+  crumbsEl.innerHTML = items.map((it, k) =>
+    (k ? '<span class="sep">/</span>' : '') +
+    `<button class="crumb${k === items.length - 1 ? ' cur' : ''}" data-d="${it.d}">${esc(it.label)}</button>`
+  ).join('');
+  crumbsEl.scrollLeft = crumbsEl.scrollWidth;
+  upBtn.style.visibility = v.path.length ? 'visible' : 'hidden';
+  editBtn.hidden = !v.path.length;
+}
+
+const cellEl = i => board.querySelector(`.cell[data-i="${i}"]`);
+
+function zoom(kind, rect) {
+  if (reduce) return;
+  const b = board.getBoundingClientRect();
+  if (kind === 'in' && rect) {
+    board.style.transformOrigin = `${rect.left + rect.width / 2 - b.left}px ${rect.top + rect.height / 2 - b.top}px`;
+    board.animate([{ transform: 'scale(.16)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  } else {
+    board.style.transformOrigin = '50% 50%';
+    board.animate([{ transform: 'scale(1.22)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  }
+}
+
+function enter(c, rect) {
+  V().path.push(c.id);
+  stage.scrollTo(0, 0);
+  render(); zoom('in', rect); save();
+}
+function goTo(depth) {
+  const v = V();
+  if (depth >= v.path.length) return;
+  v.path = v.path.slice(0, depth);
+  stage.scrollTo(0, 0);
+  render(); zoom('out'); save();
+}
+
+crumbsEl.addEventListener('click', e => {
+  const b = e.target.closest('.crumb'); if (!b) return;
+  goTo(+b.dataset.d);
+});
+upBtn.addEventListener('click', () => goTo(V().path.length - 1));
+editBtn.addEventListener('click', () => {
+  const r = resolve(); if (!r.cells.length) return;
+  const cell = r.cells[r.cells.length - 1], parent = r.nodes[r.nodes.length - 2];
+  openSheet(parent, parent.cells.indexOf(cell));
+});
+
+/* ---------- modes ---------- */
+/* switching to List repacks the cells, so the person is warned first */
+function listImpact(node) {
+  const filled = [];
+  node.cells.forEach((c, i) => { if (c) filled.push(i); });
+  if (!filled.length) return null;
+  const rowsTo = Math.max(1, Math.ceil(filled.length / node.cols));
+  const moved = filled.filter((idx, k) => idx !== k).length;
+  if (rowsTo === node.rows && !moved) return null;
+  return { moved, rowsFrom: node.rows, rowsTo };
+}
+function applyMode(node, m) {
+  if (resolve().node !== node || node.mode === m) return;
+  node.mode = m;
+  if (m === 'list') listReflow(node);
+  render();
+  if (!reduce) board.animate([{ opacity: .35, transform: 'scale(.985)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  save();
+}
+function requestMode(m) {
+  const node = resolve().node;
+  if (!MODES.includes(m) || node.mode === m) { modeSel.value = node.mode; return; }
+  if (m === 'list') {
+    const im = listImpact(node);
+    if (im) {
+      showDialog({
+        title: '配置が変わります',
+        message: 'Listモードでは、マスが左上から順に詰めて並び、縦の数は自動で決まります。\n'
+          + `・縦の数：${im.rowsFrom} → ${im.rowsTo}\n`
+          + `・位置が変わるマス：${im.moved} 個\n`
+          + '切り替えたあとは、元の配置に戻せません。',
+        ok: '切り替える', danger: true,
+        onOk: () => applyMode(node, m),
+        onCancel: () => { modeSel.value = node.mode; }
+      });
+      return;
+    }
+  }
+  applyMode(node, m);
+}
+modeSel.addEventListener('change', () => requestMode(modeSel.value));
+
+/* list mode */
+const filledCount = n => n.cells.reduce((k, c) => k + (c ? 1 : 0), 0);
+function setCols(n) {
+  const node = resolve().node;
+  n = Math.max(MIN, Math.min(MAX, n));
+  if (n === node.cols) return;
+  if (filledCount(node) > MAX * n) { toast('マスが入りきらないため、これ以上横列を減らせません'); return; }
+  node.cols = n; listReflow(node);
+  render(); save();
+}
+function listAdd() {
+  const node = resolve().node;
+  if (node.mode !== 'list') return;
+  listReflow(node);
+  const n = filledCount(node);
+  if (n >= MAX * node.cols) { toast('これ以上は追加できません。横列を増やしてください'); return; }
+  if (n >= node.cells.length) {                     /* room for one more row while the new cell is being written */
+    node.rows++;
+    for (let k = 0; k < node.cols; k++) node.cells.push(null);
+    syncLabels(node);
+  }
+  render();
+  const el = cellEl(n);
+  if (el) { try { el.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch (e) {} }
+  openSheet(node, n);
+}
+colDec.addEventListener('click', () => setCols(resolve().node.cols - 1));
+colInc.addEventListener('click', () => setCols(resolve().node.cols + 1));
+listAddBtn.addEventListener('click', listAdd);
+
+/* priority mode */
+pShapes.addEventListener('click', e => {
+  const b = e.target.closest('.pk'); if (!b) return;
+  resolve().node.pshape = b.dataset.s;
+  render(); save();
+});
+pSwatches.innerHTML = PALETTE.map(c => `<button class="psw" data-c="${c}" style="--c:${c}" aria-label="背景色 ${c}"></button>`).join('');
+pSwatches.addEventListener('click', e => {
+  const b = e.target.closest('.psw'); if (!b) return;
+  resolve().node.pcolor = b.dataset.c;
+  render(); save();
+});
+
+/* matrix mode: edit an axis label */
+frame.addEventListener('click', e => {
+  const b = e.target.closest('.lab'); if (!b) return;
+  if (suppressLabClick) return;
+  const node = resolve().node, i = +b.dataset.i, col = b.dataset.ax === 'c';
+  const arr = col ? node.colLabels : node.rowLabels;
+  showDialog({
+    title: col ? `横軸の指標（${i + 1}列目）` : `縦軸の指標（${i + 1}行目）`,
+    input: { value: arr[i] || '', placeholder: '指標の名前' }, ok: '決定',
+    onOk: v => { arr[i] = cleanName(v); render(); save(); }
+  });
+});
+
+/* matrix mode: swap the grid's rows and columns wholesale */
+function transposeNode(node) {
+  const { rows, cols, cells, colLabels, rowLabels } = node;
+  const nc = new Array(rows * cols).fill(null);
+  for (let r = 0; r < rows; r++) for (let k = 0; k < cols; k++) nc[k * rows + r] = cells[r * cols + k];
+  node.rows = cols; node.cols = rows; node.cells = nc;
+  node.colLabels = rowLabels; node.rowLabels = colLabels;
+}
+transposeBtn.addEventListener('click', () => {
+  const node = resolve().node;
+  transposeNode(node);
+  render(); save();
+  if (!reduce) board.animate([{ transform: 'rotate(2deg) scale(.97)', opacity: .5 }, { transform: 'none', opacity: 1 }], { duration: 280, easing: 'cubic-bezier(.2,.8,.2,1)' });
+});
+
+/* matrix mode: drag a label to swap its whole row or column with another */
+let LP = null, suppressLabClick = false;
+function swapCols(node, a, b) {
+  if (a === b) return;
+  for (let r = 0; r < node.rows; r++) { const ia = r * node.cols + a, ib = r * node.cols + b; [node.cells[ia], node.cells[ib]] = [node.cells[ib], node.cells[ia]]; }
+  [node.colLabels[a], node.colLabels[b]] = [node.colLabels[b], node.colLabels[a]];
+}
+function swapRows(node, a, b) {
+  if (a === b) return;
+  for (let k = 0; k < node.cols; k++) { const ia = a * node.cols + k, ib = b * node.cols + k; [node.cells[ia], node.cells[ib]] = [node.cells[ib], node.cells[ia]]; }
+  [node.rowLabels[a], node.rowLabels[b]] = [node.rowLabels[b], node.rowLabels[a]];
+}
+function labIndexAt(axis, x, y) {
+  const node = resolve().node;
+  if (axis === 'c') {
+    const r = colHead.getBoundingClientRect(), t = (x - r.left) / r.width;
+    return t < 0 || t >= 1 ? -1 : Math.min(node.cols - 1, Math.floor(t * node.cols));
+  }
+  const r = rowHead.getBoundingClientRect(), t = (y - r.top) / r.height;
+  return t < 0 || t >= 1 ? -1 : Math.min(node.rows - 1, Math.floor(t * node.rows));
+}
+function labDown(axis) {
+  return e => {
+    if (e.button !== 0 || LP) return;
+    const b = e.target.closest('.lab'); if (!b) return;
+    LP = { id: e.pointerId, axis, i: +b.dataset.i, x: e.clientX, y: e.clientY, moved: false, drag: false, el: b, node: resolve().node, t: -1 };
+    try { (axis === 'c' ? colHead : rowHead).setPointerCapture(e.pointerId); } catch (err) {}
+  };
+}
+function startLabDrag(e) {
+  LP.drag = true;
+  const er = LP.el.getBoundingClientRect();
+  LP.off = { x: e.clientX - er.left, y: e.clientY - er.top };
+  const g = LP.el.cloneNode(true);
+  g.className = 'lab labghost'; g.style.left = er.left + 'px'; g.style.top = er.top + 'px';
+  g.style.width = er.width + 'px'; g.style.height = er.height + 'px';
+  document.body.appendChild(g); LP.ghost = g;
+  LP.el.style.opacity = '.25';
+  buzz(8);
+}
+function moveLabDrag(e) {
+  LP.ghost.style.left = (e.clientX - LP.off.x) + 'px';
+  LP.ghost.style.top = (e.clientY - LP.off.y) + 'px';
+  const t = labIndexAt(LP.axis, e.clientX, e.clientY);
+  if (t !== LP.t) {
+    const root = LP.axis === 'c' ? colHead : rowHead;
+    const old = LP.t >= 0 && root.children[LP.t]; if (old) old.classList.remove('drop');
+    LP.t = t;
+    if (t >= 0 && t !== LP.i) { const el = root.children[t]; if (el) el.classList.add('drop'); }
+  }
+}
+function endLabDrag(commit) {
+  const p = LP; LP = null;
+  const root = p.axis === 'c' ? colHead : rowHead;
+  if (!p.drag) return;
+  p.ghost.remove(); p.el.style.opacity = '';
+  root.querySelectorAll('.lab.drop').forEach(x => x.classList.remove('drop'));
+  if (commit && p.t >= 0 && p.t !== p.i && resolve().node === p.node) {
+    if (p.axis === 'c') swapCols(p.node, p.i, p.t); else swapRows(p.node, p.i, p.t);
+    save();
+  }
+  if (p.moved) { suppressLabClick = true; setTimeout(() => { suppressLabClick = false; }, 0); }
+  render();
+}
+colHead.addEventListener('pointerdown', labDown('c'));
+rowHead.addEventListener('pointerdown', labDown('r'));
+document.addEventListener('pointermove', e => {
+  if (!LP || e.pointerId !== LP.id) return;
+  if (!LP.drag) {
+    if (Math.hypot(e.clientX - LP.x, e.clientY - LP.y) > 6) startLabDrag(e);
+    return;
+  }
+  moveLabDrag(e);
+});
+document.addEventListener('pointerup', e => { if (LP && e.pointerId === LP.id) endLabDrag(true); });
+document.addEventListener('pointercancel', e => { if (LP && e.pointerId === LP.id) endLabDrag(false); });
+
+/* graph mode: heading and low / high text on the two axes */
+const GRAPH_TEXT = {
+  yt: ['縦軸の見出し', '例：重要度'], ymax: ['縦軸の最大（上端）', '例：高い ・ 100'], ymin: ['縦軸の最小（下端）', '例：低い ・ 0'],
+  xt: ['横軸の見出し', '例：緊急度'], xmin: ['横軸の最小（左端）', '例：低い ・ 0'], xmax: ['横軸の最大（右端）', '例：高い ・ 100']
+};
+/* priority mode: a compact legend (not tied to the grid) explains what the ribbon colour means */
+const PAXIS_TEXT = {
+  head: ['見出し（任意）', '例：緊急度'], high: ['濃い側（重要）', '例：重要'], low: ['薄い側（軽微）', '例：軽微']
+};
+function editPAxis(k) {
+  const node = resolve().node, t = PAXIS_TEXT[k];
+  showDialog({
+    title: t[0], input: { value: (node.paxis && node.paxis[k]) || '', placeholder: t[1] }, ok: '決定',
+    onOk: v => { node.paxis[k] = cleanName(v); render(); save(); }
+  });
+}
+pHead.addEventListener('click', () => editPAxis('head'));
+pHigh.addEventListener('click', () => editPAxis('high'));
+pLow.addEventListener('click', () => editPAxis('low'));
+
+frame.addEventListener('click', e => {
+  const b = e.target.closest('.glab[data-g]'); if (!b) return;
+  const node = resolve().node, k = b.dataset.g, t = GRAPH_TEXT[k]; if (!t) return;
+  showDialog({
+    title: t[0], input: { value: node.graph[k] || '', placeholder: t[1] }, ok: '決定',
+    onOk: v => { node.graph[k] = cleanName(v); render(); save(); }
+  });
+});
+
+/* ---------- structure edit mode (free / matrix / graph / priority) ---------- */
+const E = { on: false, lock: true, posL: 'br', posF: 'bottom', node: null };
+const POS_LOCKED = [['tr', '右＋上'], ['br', '右＋下'], ['tl', '左＋上'], ['bl', '左＋下']];
+const POS_FREE = [['top', '上'], ['right', '右'], ['bottom', '下'], ['left', '左']];
+const curPos = () => (E.lock ? E.posL : E.posF);
+
+function pict(kind) {
+  const t = kind === 'top' || kind === 'tr' || kind === 'tl';
+  const b = kind === 'bottom' || kind === 'br' || kind === 'bl';
+  const l = kind === 'left' || kind === 'tl' || kind === 'bl';
+  const rt = kind === 'right' || kind === 'tr' || kind === 'br';
+  let s = '<svg viewBox="0 0 18 18" width="18" height="18" aria-hidden="true">';
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 3; c++) {
+    const on = (t && r === 0) || (b && r === 2) || (l && c === 0) || (rt && c === 2);
+    s += `<rect x="${c * 6.5 + .4}" y="${r * 6.5 + .4}" width="4.9" height="4.9" rx=".6" ${on ? 'fill="currentColor"' : 'fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width=".9"'}/>`;
+  }
+  return s + '</svg>';
+}
+const LOCK_ON = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+const LOCK_OFF = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 7.6-1.6"/></svg>';
+const dimsHTML = n => `<span class="dl">縦</span>${n.rows}<span class="x">×</span><span class="dl">横</span>${n.cols}`;
+
+function deltas() {
+  const p = curPos(), d = { t: 0, b: 0, l: 0, r: 0 };
+  if (E.lock) { d[p[0]] = 1; d[p[1]] = 1; }
+  else d[{ top: 't', bottom: 'b', left: 'l', right: 'r' }[p]] = 1;
+  return d;
+}
+function markersHTML(editing) {
+  if (!editing) return '';
+  const d = deltas();
+  return ['t:top', 'b:bottom', 'l:left', 'r:right'].filter(x => d[x[0]]).map(x => `<div class="edge ${x.slice(2)}"></div>`).join('');
+}
+
+function planAdd(node, d) {
+  const rows = node.rows + d.t + d.b, cols = node.cols + d.l + d.r;
+  if (rows > MAX || cols > MAX) return { ok: false, reason: 'max' };
+  const cells = new Array(rows * cols).fill(null), fresh = new Set();
+  node.cells.forEach((c, i) => {
+    const r = Math.floor(i / node.cols), k = i % node.cols;
+    cells[(r + d.t) * cols + (k + d.l)] = c;
+  });
+  for (let r = 0; r < rows; r++) for (let k = 0; k < cols; k++) {
+    if (r < d.t || r >= d.t + node.rows || k < d.l || k >= d.l + node.cols) fresh.add(r * cols + k);
+  }
+  const pad = n => new Array(n).fill('');
+  return {
+    ok: true, rows, cols, cells, fresh,
+    colLabels: pad(d.l).concat(node.colLabels, pad(d.r)),
+    rowLabels: pad(d.t).concat(node.rowLabels, pad(d.b))
+  };
+}
+function planRemove(node, d) {
+  const rows = node.rows - d.t - d.b, cols = node.cols - d.l - d.r;
+  if (rows < MIN || cols < MIN) return { ok: false, reason: 'min' };
+  const cells = new Array(rows * cols).fill(null), over = [];
+  node.cells.forEach((c, i) => {
+    if (!c) return;
+    const r = Math.floor(i / node.cols), k = i % node.cols, nr = r - d.t, nk = k - d.l;
+    if (nr >= 0 && nr < rows && nk >= 0 && nk < cols) cells[nr * cols + nk] = c; else over.push({ c, r, k });
+  });
+  if (over.length) {
+    const free = [];
+    cells.forEach((c, i) => { if (!c) free.push(i); });
+    if (free.length < over.length) return { ok: false, reason: 'space' };
+    over.forEach(o => {
+      let best = 0, bd = Infinity;
+      free.forEach((idx, j) => {
+        const dist = Math.abs(Math.floor(idx / cols) + d.t - o.r) + Math.abs((idx % cols) + d.l - o.k);
+        if (dist < bd) { bd = dist; best = j; }
+      });
+      cells[free[best]] = o.c; free.splice(best, 1);
+    });
+  }
+  return {
+    ok: true, rows, cols, cells, moved: over.length,
+    colLabels: node.colLabels.slice(d.l, node.cols - d.r),
+    rowLabels: node.rowLabels.slice(d.t, node.rows - d.b)
+  };
+}
+function applyPlan(node, p) {
+  node.rows = p.rows; node.cols = p.cols; node.cells = p.cells;
+  node.colLabels = p.colLabels; node.rowLabels = p.rowLabels;
+}
+
+function buildPicker() {
+  const list = E.lock ? POS_LOCKED : POS_FREE;
+  picker.dataset.mode = E.lock ? 'l' : 'f';
+  picker.innerHTML = list.map(([k, l]) =>
+    `<button class="pk" role="radio" data-p="${k}" aria-checked="false" aria-label="${l}">${pict(k)}<span>${l}</span></button>`).join('');
+}
+function renderBar(node, editing) {
+  const list = node.mode === 'list', prio = node.mode === 'priority', matrix = node.mode === 'matrix';
+  modeDims.innerHTML = dimsHTML(node);
+  modeSel.value = node.mode;
+  viewBar.hidden = editing || list;
+  editBar.hidden = !editing;
+  listBar.hidden = !list;
+  prioBar.hidden = !prio || editing;
+  hintView.hidden = editing || list || matrix; hintEdit.hidden = !editing; hintList.hidden = !list;
+  hintMatrix.hidden = !matrix || editing;
+  if (list) { colOut.textContent = node.cols; colDec.disabled = node.cols <= MIN; colInc.disabled = node.cols >= MAX; }
+  if (prio) {
+    pShapes.querySelectorAll('.pk').forEach(b => b.setAttribute('aria-checked', String(b.dataset.s === node.pshape)));
+    pSwatches.querySelectorAll('.psw').forEach(b => b.classList.toggle('on', b.dataset.c === node.pcolor));
+    const strong = rgbCSS(mixRGB(hexRGB(node.pcolor), surfaceRGB(), P_STRONG));
+    const weak = rgbCSS(mixRGB(hexRGB(node.pcolor), surfaceRGB(), P_WEAK));
+    pGrad.style.background = `linear-gradient(to right, ${strong}, ${weak})`;
+    [[pHead, 'head'], [pHigh, 'high'], [pLow, 'low']].forEach(([el, k]) => {
+      const v = (node.paxis && node.paxis[k]) || '';
+      el.classList.toggle('empty', !v);
+      el.firstElementChild.textContent = v;
+    });
+  }
+  if (!editing) return;
+  dimOut.innerHTML = dimsHTML(node);
+  lockBtn.classList.toggle('on', E.lock);
+  lockBtn.setAttribute('aria-pressed', String(E.lock));
+  lockLbl.textContent = E.lock ? '縦横比ロック' : 'ロック解除';
+  lockIcon.innerHTML = E.lock ? LOCK_ON : LOCK_OFF;
+  if (picker.dataset.mode !== (E.lock ? 'l' : 'f')) buildPicker();
+  picker.querySelectorAll('.pk').forEach(b => b.setAttribute('aria-checked', String(b.dataset.p === curPos())));
+  const d = deltas();
+  addBtn.disabled = !planAdd(node, d).ok;
+  const rm = planRemove(node, d);
+  rmBtn.disabled = !rm.ok && rm.reason === 'min';
+}
+function setEdit(on) { E.on = on; render(); }
+
+function freshAnim(set) {
+  if (reduce || !set) return;
+  set.forEach(i => {
+    const el = cellEl(i);
+    if (el) el.animate([{ opacity: 0, transform: 'scale(.55)' }, { opacity: 1, transform: 'none' }], { duration: 360, easing: 'cubic-bezier(.2,.8,.2,1)' });
+  });
+}
+
+editModeBtn.insertAdjacentHTML('afterbegin', pict('tr'));
+editModeBtn.addEventListener('click', () => setEdit(true));
+editDone.addEventListener('click', () => setEdit(false));
+lockBtn.addEventListener('click', () => { E.lock = !E.lock; render(); });
+picker.addEventListener('click', e => {
+  const b = e.target.closest('.pk'); if (!b) return;
+  if (E.lock) E.posL = b.dataset.p; else E.posF = b.dataset.p;
+  render();
+});
+addBtn.addEventListener('click', () => {
+  const node = resolve().node, p = planAdd(node, deltas());
+  if (!p.ok) { toast(E.lock ? `最大は ${MAX} マスです。ロックを解除すると、縦か横だけ増やせます` : `最大は ${MAX} マスです`); return; }
+  applyPlan(node, p);
+  render(); freshAnim(p.fresh); save();
+});
+rmBtn.addEventListener('click', () => {
+  const node = resolve().node, p = planRemove(node, deltas());
+  if (!p.ok) {
+    toast(p.reason === 'min' ? 'これ以上は減らせません' : '削除する側のマスを移す空きが足りません。先にマスを整理してください');
+    return;
+  }
+  applyPlan(node, p);
+  if (p.moved) toast(`はみ出した ${p.moved} 個のマスを近くの空きへ移しました`);
+  render(); save();
+});
+
+/* ---------- toast / haptics ---------- */
+let toastT;
+function toast(m) {
+  toastEl.textContent = m; toastEl.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), 2800);
+}
+function buzz(ms = 10) { try { navigator.vibrate && navigator.vibrate(ms); } catch (e) {} }
+
+/* ---------- pointer: tap / hold / drag ---------- */
+let P = null;
+function idxAt(x, y) {
+  const r = board.getBoundingClientRect(), nd = resolve().node;
+  const cx = (x - r.left) / r.width, cy = (y - r.top) / r.height;
+  if (cx < 0 || cx >= 1 || cy < 0 || cy >= 1) return -1;
+  return Math.floor(cy * nd.rows) * nd.cols + Math.floor(cx * nd.cols);
+}
+const canOpen = (node, i) => !(node.mode === 'list' && !node.cells[i]);
+
+board.addEventListener('pointerdown', e => {
+  if (e.button !== 0 || P) return;
+  const el = e.target.closest('.cell'); if (!el || el.classList.contains('ghost')) return;
+  const p = P = { id: e.pointerId, i: +el.dataset.i, x: e.clientX, y: e.clientY, lx: e.clientX, ly: e.clientY, moved: false, drag: false, grab: false, type: e.pointerType, el, node: resolve().node, t: -1, raf: 0 };
+  try { board.setPointerCapture(e.pointerId); } catch (err) {}
+  p.timer = setTimeout(() => {
+    if (P === p && !p.moved && !p.drag) { p.grab = true; el.classList.add('grabbing'); buzz(14); }
+  }, 380);
+});
+
+board.addEventListener('pointermove', e => {
+  if (!P || e.pointerId !== P.id) return;
+  P.lx = e.clientX; P.ly = e.clientY;
+  if (!P.drag) {
+    if (Math.hypot(e.clientX - P.x, e.clientY - P.y) > (P.type === 'mouse' ? 5 : 9)) {
+      clearTimeout(P.timer);
+      P.moved = true;
+      /* a touch swipe on a scrollable board scrolls it; hold first to pick a cell up */
+      if (P.type !== 'mouse' && stage.classList.contains('scrollable') && !P.grab) return;
+      if (P.node.cells[P.i]) startDrag(e);
+    }
+    return;
+  }
+  moveDrag(e);
+});
+board.addEventListener('touchmove', e => {
+  if (P && (P.grab || P.drag) && e.cancelable) e.preventDefault();
+}, { passive: false });
+stage.addEventListener('scroll', () => { if (P && P.drag) moveDrag({ clientX: P.lx, clientY: P.ly }); }, { passive: true });
+
+function startDrag(e) {
+  P.el.classList.remove('grabbing');
+  const er = P.el.getBoundingClientRect();
+  P.drag = true;
+  P.off = { x: e.clientX - er.left, y: e.clientY - er.top };
+  const g = P.el.cloneNode(true);
+  g.classList.add('ghost'); g.removeAttribute('data-i'); g.removeAttribute('tabindex');
+  g.style.width = er.width + 'px'; g.style.height = er.height + 'px';
+  board.appendChild(g); P.ghost = g;
+  P.el.classList.add('lift'); board.classList.add('dragging');
+  buzz(8); moveDrag(e);
+  autoScroll(P);
+}
+function moveDrag(e) {
+  const br = board.getBoundingClientRect();
+  P.ghost.style.left = (e.clientX - P.off.x - br.left) + 'px';
+  P.ghost.style.top = (e.clientY - P.off.y - br.top) + 'px';
+  const t = idxAt(e.clientX, e.clientY);
+  if (t !== P.t) {
+    const old = P.t >= 0 && cellEl(P.t); if (old) old.classList.remove('drop');
+    P.t = t;
+    if (t >= 0 && t !== P.i) { const el = cellEl(t); if (el) el.classList.add('drop'); }
+  }
+}
+/* scroll the stage while a cell is held near its edge */
+function autoScroll(p) {
+  if (P !== p || !p.drag) return;
+  const r = stage.getBoundingClientRect(), z = 48;
+  const axis = (v, lo, hi) => (v < lo + z ? -(1 - (v - lo) / z) : v > hi - z ? 1 - (hi - v) / z : 0);
+  const dx = Math.max(-1, Math.min(1, axis(p.lx, r.left, r.right))) * 16;
+  const dy = Math.max(-1, Math.min(1, axis(p.ly, r.top, r.bottom))) * 16;
+  if (dx || dy) { stage.scrollLeft += dx; stage.scrollTop += dy; }
+  p.raf = requestAnimationFrame(() => autoScroll(p));
+}
+
+function endDrag(p, commit) {
+  const node = p.node;
+  const valid = commit && p.t >= 0 && p.t !== p.i && node === resolve().node;
+  const gr = p.ghost.getBoundingClientRect();
+  p.ghost.remove(); board.classList.remove('dragging');
+  let ti = p.t;
+  if (valid) {
+    const a = node.cells;
+    [a[p.i], a[p.t]] = [a[p.t], a[p.i]];
+    if (node.mode === 'list') { const moved = a[p.t]; listReflow(node); ti = node.cells.indexOf(moved); }
+    save();
+  }
+  render();
+  if (reduce) return;
+  const ctr = r => ({ x: r.left + r.width / 2, y: r.top + r.height / 2 });
+  const opt = { duration: 300, easing: 'cubic-bezier(.2,.8,.2,1)' };
+  const T = cellEl(valid ? ti : p.i), Sx = cellEl(p.i);
+  if (T) {
+    const g = ctr(gr), t = ctr(T.getBoundingClientRect());
+    T.animate([{ transform: `translate(${g.x - t.x}px,${g.y - t.y}px) scale(1.05)` }, { transform: 'none' }], opt);
+  }
+  if (valid && node.mode !== 'list' && Sx && T && node.cells[p.i]) {
+    const s = ctr(Sx.getBoundingClientRect()), t = ctr(T.getBoundingClientRect());
+    Sx.animate([{ transform: `translate(${t.x - s.x}px,${t.y - s.y}px)` }, { transform: 'none' }], opt);
+  }
+}
+
+function releaseP(p) {
+  clearTimeout(p.timer); cancelAnimationFrame(p.raf);
+  p.el.classList.remove('grabbing');
+}
+board.addEventListener('pointerup', e => {
+  if (!P || e.pointerId !== P.id) return;
+  const p = P; P = null; releaseP(p);
+  try { board.releasePointerCapture(e.pointerId); } catch (err) {}
+  if (p.drag) { endDrag(p, true); return; }
+  if (p.moved) return;
+  if (p.grab) { if (canOpen(p.node, p.i)) openSheet(p.node, p.i); return; }
+  handleTap(p.node, p.i, p.el);
+});
+board.addEventListener('pointercancel', e => {
+  if (!P || e.pointerId !== P.id) return;
+  const p = P; P = null; releaseP(p);
+  if (p.drag) endDrag(p, false);
+});
+board.addEventListener('contextmenu', e => {
+  e.preventDefault();
+  const el = e.target.closest('.cell'); if (!el || !el.dataset.i) return;
+  const node = resolve().node, i = +el.dataset.i;
+  if (canOpen(node, i)) openSheet(node, i);
+});
+board.addEventListener('keydown', e => {
+  const el = e.target.closest('.cell'); if (!el || !el.dataset.i) return;
+  const node = resolve().node, i = +el.dataset.i;
+  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleTap(node, i, el); }
+  else if ((e.key === 'e' || e.key === 'E') && canOpen(node, i)) { e.preventDefault(); openSheet(node, i); }
+});
+
+function handleTap(node, i, el) {
+  if (!canOpen(node, i)) return;                 /* list mode: cells are only added with the add button */
+  const c = node.cells[i];
+  if (c && c.type === 'grid' && c.child) enter(c, el.getBoundingClientRect());
+  else openSheet(node, i);
+}
+
+/* ---------- edit sheet ---------- */
+let sh = null;
+
+swBox.innerHTML =
+  `<button class="sw none" data-c="" aria-label="色なし"></button>` +
+  PALETTE.map(c => `<button class="sw" data-c="${c.toLowerCase()}" style="--c:${c}" aria-label="色 ${c}"></button>`).join('') +
+  `<label class="sw custom" id="customSw" aria-label="好きな色を選ぶ"><input type="color" id="customColor" value="#888888"></label>`;
+const customSw = $('#customSw'), customInput = $('#customColor');
+
+function ensureCell() {
+  let c = sh.node.cells[sh.idx];
+  if (!c) { c = newCell(); sh.node.cells[sh.idx] = c; }
+  return c;
+}
+function normalize(node, idx) {
+  const c = node.cells[idx]; if (!c) return;
+  if (c.type === 'note' && !c.title.trim() && !c.text.trim() && !c.color && (!c.child || isEmptyNode(c.child))) node.cells[idx] = null;
+}
+
+function syncSheet(initial) {
+  const c = sh.node.cells[sh.idx], type = c ? c.type : 'note', col = (c && c.color) || '';
+  const a = c ? c.alpha : DEFAULT_ALPHA;
+  segs.forEach(b => b.classList.toggle('on', b.dataset.type === type));
+  if (initial) { titleIn.value = c ? c.title : ''; ta.value = c ? c.text : ''; }
+  ta.placeholder = type === 'grid' ? 'このグリッドの説明（任意）' : '内容を書く…';
+  ta.rows = type === 'grid' ? 3 : 5;
+  const t = Math.round((1 - a) * 100 / 5) * 5;
+  alphaIn.value = t;
+  alphaOut.textContent = col ? t + '%' : '—';
+  alphaRow.classList.toggle('off', !col);
+  sheet.style.setProperty('--cbar', col || 'transparent');
+  sheet.style.setProperty('--cc', col || 'var(--surface)');
+  sheet.style.setProperty('--cf', col || 'var(--accent)');
+  let inPalette = false;
+  swBox.querySelectorAll('.sw[data-c]').forEach(b => {
+    const on = b.dataset.c === col;
+    if (on && col) inPalette = true;
+    b.classList.toggle('on', on);
+  });
+  customSw.classList.toggle('on', !!col && !inPalette);
+  customSw.style.setProperty('--c', col || '#888888');
+  openBtn.hidden = !(type === 'grid' && c && sh.node === resolve().node);
+  clearBtn.hidden = !c;
+  if (initial) disarm();
+}
+
+function openSheet(node, idx) {
+  if (sh && sh.node === node && sh.idx === idx) return;
+  if (sh) closeSheet();
+  sh = { node, idx };
+  syncSheet(true);
+  scrim.classList.add('open'); sheet.classList.add('open');
+  sheet.scrollTop = 0;
+  if (!node.cells[idx]) setTimeout(() => { if (sh) titleIn.focus({ preventScroll: true }); }, 280);
+}
+function closeSheet() {
+  if (!sh) return;
+  const { node, idx } = sh;
+  sh = null;
+  normalize(node, idx);
+  if (node.mode === 'list') listReflow(node);
+  sheet.classList.remove('open'); scrim.classList.remove('open');
+  titleIn.blur(); ta.blur(); disarm();
+  render(); save();
+}
+scrim.addEventListener('click', closeSheet);
+doneBtn.addEventListener('click', closeSheet);
+
+const composing = e => e.isComposing || e.keyCode === 229;
+
+titleIn.addEventListener('input', () => {
+  if (!sh) return;
+  ensureCell().title = titleIn.value;
+  syncSheet(false); scheduleRender(); save();
+});
+titleIn.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !composing(e)) { e.preventDefault(); ta.focus(); }
+});
+ta.addEventListener('input', () => {
+  if (!sh) return;
+  ensureCell().text = ta.value;
+  syncSheet(false); scheduleRender(); save();
+});
+
+segs.forEach(b => b.addEventListener('click', () => {
+  if (!sh) return;
+  const c = ensureCell(), t = b.dataset.type;
+  c.type = t;
+  if (t === 'grid' && !c.child) c.child = newNode(CHILD_SIZE);
+  syncSheet(false); scheduleRender(); save();
+}));
+
+swBox.addEventListener('click', e => {
+  const b = e.target.closest('button.sw'); if (!b || !sh) return;
+  ensureCell().color = b.dataset.c || null;
+  syncSheet(false); scheduleRender(); save();
+});
+customInput.addEventListener('input', () => {
+  if (!sh) return;
+  ensureCell().color = customInput.value.toLowerCase();
+  syncSheet(false); scheduleRender(); save();
+});
+alphaIn.addEventListener('input', () => {
+  if (!sh) return;
+  const c = ensureCell();
+  if (!c.color) return;
+  c.alpha = clampA(1 - (+alphaIn.value) / 100);
+  alphaOut.textContent = alphaIn.value + '%';
+  scheduleRender(); save();
+});
+
+openBtn.addEventListener('click', () => {
+  if (!sh) return;
+  const { node, idx } = sh, c = node.cells[idx];
+  const el = cellEl(idx), rect = el ? el.getBoundingClientRect() : null;
+  closeSheet();
+  if (c && c.type === 'grid' && c.child) enter(c, rect);
+});
+
+let armed = false, armT;
+function disarm() {
+  armed = false; clearTimeout(armT);
+  clearBtn.classList.remove('armed');
+  clearBtn.textContent = 'このマスを空にする';
+}
+clearBtn.addEventListener('click', () => {
+  if (!sh) return;
+  const c = sh.node.cells[sh.idx]; if (!c) return;
+  const hasData = c.title.trim() || c.text.trim() || (c.child && !isEmptyNode(c.child));
+  if (hasData && !armed) {
+    armed = true;
+    clearBtn.classList.add('armed');
+    clearBtn.textContent = 'もう一度タップで削除（中身も消えます）';
+    armT = setTimeout(disarm, 3200);
+    return;
+  }
+  disarm();
+  sh.node.cells[sh.idx] = null;
+  closeSheet();
+});
+
+/* keep the sheet above the on-screen keyboard */
+function fitViewport() {
+  const v = window.visualViewport; if (!v) return;
+  const kb = Math.max(0, innerHeight - v.height - v.offsetTop);
+  sheet.style.bottom = kb + 'px';
+  document.documentElement.style.setProperty('--vvh', v.height + 'px');
+}
+if (window.visualViewport) ['resize', 'scroll'].forEach(t => visualViewport.addEventListener(t, fitViewport));
+
+/* ---------- dialog ---------- */
+let dlgCb = null, dlgCancelCb = null;
+function showDialog({ title, message = '', input = null, ok = 'OK', danger = false, onOk, onCancel }) {
+  dlgTitle.textContent = title;
+  dlgMsg.textContent = message; dlgMsg.hidden = !message;
+  dlgInput.hidden = !input;
+  if (input) { dlgInput.value = input.value || ''; dlgInput.placeholder = input.placeholder || ''; }
+  dlgOk.textContent = ok;
+  dlgOk.classList.toggle('danger', danger);
+  dlgCb = onOk; dlgCancelCb = onCancel || null;
+  dlg.classList.add('open'); dlgScrim.classList.add('open');
+  setTimeout(() => { if (!dlg.classList.contains('open')) return; if (input) { dlgInput.focus(); dlgInput.select(); } else dlgCancel.focus(); }, 60);
+}
+function closeDialog(cancelled = true) {
+  const cc = dlgCancelCb;
+  dlg.classList.remove('open'); dlgScrim.classList.remove('open');
+  dlgCb = null; dlgCancelCb = null;
+  if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+  if (cancelled && cc) cc();
+}
+dlgOk.addEventListener('click', () => { const cb = dlgCb, v = dlgInput.value; closeDialog(false); if (cb) cb(v); });
+dlgCancel.addEventListener('click', () => closeDialog());
+dlgScrim.addEventListener('click', () => closeDialog());
+dlgInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !composing(e)) { e.preventDefault(); dlgOk.click(); }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (dlg.classList.contains('open')) closeDialog();
+  else if (!exportMenu.hidden) closeExportMenu();
+  else if (!menu.hidden) closeMenu();
+  else if (sh) closeSheet();
+  else if (E.on) setEdit(false);
+});
+
+/* ---------- vaults ---------- */
+function renderVaults() {
+  vtabs.innerHTML = S.vaults.map(v =>
+    `<button class="vtab${v.id === S.cur ? ' cur' : ''}" role="tab" aria-selected="${v.id === S.cur}" data-id="${v.id}">${esc(v.name)}</button>`
+  ).join('');
+  const cur = vtabs.querySelector('.cur');
+  if (cur) {
+    const l = cur.offsetLeft, r = l + cur.offsetWidth;
+    if (l < vtabs.scrollLeft || r > vtabs.scrollLeft + vtabs.clientWidth) vtabs.scrollLeft = l - (vtabs.clientWidth - cur.offsetWidth) / 2;
+  }
+}
+function vaultAnim() {
+  stage.scrollTo(0, 0);
+  if (reduce) return;
+  board.style.transformOrigin = '50% 50%';
+  board.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.2,.8,.2,1)' });
+}
+function selectVault(id) {
+  if (id === S.cur || !S.vaults.some(v => v.id === id)) return;
+  S.cur = id;
+  renderVaults(); render(); vaultAnim(); save();
+}
+function defaultVaultName() {
+  const names = new Set(S.vaults.map(v => v.name));
+  let n = S.vaults.length + 1;
+  while (names.has(`保管庫 ${n}`)) n++;
+  return `保管庫 ${n}`;
+}
+function addVault() {
+  if (S.vaults.length >= MAX_VAULTS) { toast(`保管庫は ${MAX_VAULTS} 個までです`); return; }
+  showDialog({
+    title: '新しい保管庫', input: { value: defaultVaultName(), placeholder: '保管庫の名前' }, ok: '追加',
+    onOk: val => {
+      const v = newVault(cleanName(val) || defaultVaultName());
+      S.vaults.push(v); S.cur = v.id;
+      renderVaults(); render(); vaultAnim(); save();
+    }
+  });
+}
+/* import a vault previously written by "書き出す… → JSON": makes a new vault rather than touching
+   any existing one, so bringing a file in from another device never overwrites local data */
+function uniqueVaultName(base) {
+  const names = new Set(S.vaults.map(v => v.name));
+  if (!names.has(base)) return base;
+  let n = 2;
+  while (names.has(`${base} (${n})`)) n++;
+  return `${base} (${n})`;
+}
+function importVaultData(data) {
+  if (!data || typeof data !== 'object' || !data.root || typeof data.root !== 'object') {
+    toast('読み込めませんでした。Gridsの「書き出す → JSON」で保存したファイルを選んでください');
+    return;
+  }
+  if (S.vaults.length >= MAX_VAULTS) { toast(`保管庫は ${MAX_VAULTS} 個までです`); return; }
+  const name = uniqueVaultName(cleanName(data.name) || '読み込んだ保管庫');
+  let root;
+  try { root = cleanNode(data.root); }
+  catch (e) { toast('読み込めませんでした。ファイルの中身が壊れているようです'); return; }
+  const v = { id: uid(), name, root, path: [] };
+  S.vaults.push(v); S.cur = v.id;
+  renderVaults(); render(); vaultAnim(); save();
+  toast(`「${name}」を読み込みました`);
+}
+vImport.addEventListener('click', () => { closeMenu(); closeExportMenu(); importFile.value = ''; importFile.click(); });
+importFile.addEventListener('change', () => {
+  const f = importFile.files && importFile.files[0]; if (!f) return;
+  if (f.size > 8 * 1024 * 1024) { toast('ファイルが大きすぎます'); return; }
+  const reader = new FileReader();
+  reader.onload = () => {
+    let data;
+    try { data = JSON.parse(reader.result); }
+    catch (e) { toast('読み込めませんでした。JSON形式のファイルではないようです'); return; }
+    importVaultData(data);
+  };
+  reader.onerror = () => toast('ファイルを読み込めませんでした');
+  reader.readAsText(f, 'utf-8');
+});
+
+function renameVault() {
+  const v = V();
+  showDialog({
+    title: '名前を変更', input: { value: v.name, placeholder: '保管庫の名前' }, ok: '変更',
+    onOk: val => {
+      const name = cleanName(val); if (!name) return;
+      v.name = name;
+      renderVaults(); render(); save();
+    }
+  });
+}
+function deleteVault() {
+  const v = V();
+  showDialog({
+    title: '保管庫を削除',
+    message: `「${v.name}」と、その中のメモをすべて削除します。この操作は取り消せません。`,
+    ok: '削除', danger: true,
+    onOk: () => {
+      const i = S.vaults.indexOf(v);
+      S.vaults.splice(i, 1);
+      if (!S.vaults.length) S.vaults.push(newVault('保管庫 1'));
+      S.cur = S.vaults[Math.min(i, S.vaults.length - 1)].id;
+      renderVaults(); render(); vaultAnim(); save();
+    }
+  });
+}
+function closeMenu() { menu.hidden = true; vMenu.setAttribute('aria-expanded', 'false'); }
+function closeExportMenu() { exportMenu.hidden = true; }
+
+function walkVault(node, path, out) {
+  node.cells.forEach(c => {
+    if (!c) return;
+    const p = path.concat(titleOf(c));
+    out.push({ path: p, type: c.type, title: c.title.trim(), text: c.text, color: c.color || '' });
+    if (c.type === 'grid' && c.child) walkVault(c.child, p, out);
+  });
+}
+function csvField(v) {
+  v = String(v == null ? '' : v);
+  return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+function toCSV(rows) {
+  const lines = [['階層', '種類', 'タイトル', '内容', '色'].join(',')];
+  rows.forEach(r => lines.push([r.path.join(' > '), r.type === 'grid' ? 'グリッド' : 'メモ', r.title, r.text, r.color].map(csvField).join(',')));
+  return '\ufeff' + lines.join('\r\n');
+}
+function toOutline(rows, md) {
+  return rows.map(r => {
+    const indent = '  '.repeat(r.path.length - 1);
+    let s = indent + (md ? '- ' : '・') + (r.title || '無題') + (r.type === 'grid' ? (md ? ' 📁' : '［グリッド］') : '');
+    const body = r.text.trim();
+    if (body) s += '\n' + body.split('\n').map(l => indent + '  ' + l).join('\n');
+    return s;
+  }).join('\n');
+}
+function downloadText(name, content, mime) {
+  const blob = new Blob([content], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = name; a.rel = 'noopener';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+function doExport(fmt) {
+  const v = V(), rows = [];
+  walkVault(v.root, [], rows);
+  const name = (v.name || 'grids').replace(/[\\/:*?"<>|]/g, '_');
+  if (fmt === 'csv') downloadText(name + '.csv', toCSV(rows), 'text/csv;charset=utf-8');
+  else if (fmt === 'md') downloadText(name + '.md', `# ${v.name}\n\n` + toOutline(rows, true), 'text/markdown;charset=utf-8');
+  else if (fmt === 'txt') downloadText(name + '.txt', v.name + '\n\n' + toOutline(rows, false), 'text/plain;charset=utf-8');
+  else downloadText(name + '.json', JSON.stringify(v, null, 2), 'application/json;charset=utf-8');
+  toast('書き出しました');
+}
+
+vtabs.addEventListener('click', e => {
+  const b = e.target.closest('.vtab'); if (!b) return;
+  selectVault(b.dataset.id);
+});
+vAdd.addEventListener('click', () => { closeMenu(); addVault(); });
+vMenu.addEventListener('click', () => {
+  const open = menu.hidden;
+  menu.hidden = !open;
+  vMenu.setAttribute('aria-expanded', String(open));
+});
+mRename.addEventListener('click', () => { closeMenu(); renameVault(); });
+mExport.addEventListener('click', () => { closeMenu(); exportMenu.hidden = false; });
+mDelete.addEventListener('click', () => { closeMenu(); deleteVault(); });
+exportMenu.addEventListener('click', e => {
+  const b = e.target.closest('button[data-f]'); if (!b) return;
+  closeExportMenu(); doExport(b.dataset.f);
+});
+document.addEventListener('pointerdown', e => {
+  if (!menu.hidden && !e.target.closest('#menu, #vMenu')) closeMenu();
+  if (!exportMenu.hidden && !e.target.closest('#exportMenu')) closeExportMenu();
+});
+
+/* ---------- start ---------- */
+renderVaults();
+render();
+setTimeout(() => board.classList.remove('intro'), 1300);
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
