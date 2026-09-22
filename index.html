@@ -5,18 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="color-scheme" content="light dark">
 <title>Grids</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#f6f7f7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1a1d20" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Grids">
-<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkdyaWRzIiwgInNob3J0X25hbWUiOiAiR3JpZHMiLCAiZGVzY3JpcHRpb24iOiAi6ZqO5bGk44Gn44Gy44KN44GM44KL44Oh44OiIiwgInN0YXJ0X3VybCI6ICJodHRwczovL2NsYXVkZS5haS9hcnRpZmFjdC9FaXdaUlVwTFFhQ2hoUkFYZTlOVUp0IiwgInNjb3BlIjogImh0dHBzOi8vY2xhdWRlLmFpL2FydGlmYWN0L0Vpd1pSVXBMUWFDaGhSQVhlOU5VSnQiLCAiaWQiOiAiZ3JpZHMtYXBwIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJhbnkiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjZTRlNmU3IiwgInRoZW1lX2NvbG9yIjogIiMxYTFkMjAiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQTVOaUE1TmlJK0NpQWdQSEpsWTNRZ2QybGtkR2c5SWprMklpQm9aV2xuYUhROUlqazJJaUJ5ZUQwaU1qQWlJR1pwYkd3OUlpTXhZVEZrTWpBaUx6NEtJQ0E4WnlCMGNtRnVjMlp2Y20wOUluUnlZVzV6YkdGMFpTZ3lNQ3d5TUNraUlHWnBiR3c5SW01dmJtVWlJSE4wY205clpUMGlJMlkyWmpkbU55SWdjM1J5YjJ0bExYZHBaSFJvUFNJeklqNEtJQ0FnSUR4eVpXTjBJSGc5SWpJaUlIazlJaklpSUhkcFpIUm9QU0l4TmlJZ2FHVnBaMmgwUFNJeE5pSXZQanh5WldOMElIZzlJakl5SWlCNVBTSXlJaUIzYVdSMGFEMGlNVFlpSUdobGFXZG9kRDBpTVRZaUlHWnBiR3c5SWlObU5tWTNaamNpTHo0OGNtVmpkQ0I0UFNJME1pSWdlVDBpTWlJZ2QybGtkR2c5SWpFMklpQm9aV2xuYUhROUlqRTJJaTgrQ2lBZ0lDQThjbVZqZENCNFBTSXlJaUI1UFNJeU1pSWdkMmxrZEdnOUlqRTJJaUJvWldsbmFIUTlJakUySWk4K1BISmxZM1FnZUQwaU1qSWlJSGs5SWpJeUlpQjNhV1IwYUQwaU1UWWlJR2hsYVdkb2REMGlNVFlpTHo0OGNtVmpkQ0I0UFNJME1pSWdlVDBpTWpJaUlIZHBaSFJvUFNJeE5pSWdhR1ZwWjJoMFBTSXhOaUl2UGdvZ0lDQWdQSEpsWTNRZ2VEMGlNaUlnZVQwaU5ESWlJSGRwWkhSb1BTSXhOaUlnYUdWcFoyaDBQU0l4TmlJdlBqeHlaV04wSUhnOUlqSXlJaUI1UFNJME1pSWdkMmxrZEdnOUlqRTJJaUJvWldsbmFIUTlJakUySWk4K1BISmxZM1FnZUQwaU5ESWlJSGs5SWpReUlpQjNhV1IwYUQwaU1UWWlJR2hsYVdkb2REMGlNVFlpTHo0S0lDQThMMmMrQ2p3dmMzWm5QZ289IiwgInNpemVzIjogImFueSIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkifSwgeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQTVOaUE1TmlJK0NpQWdQSEpsWTNRZ2QybGtkR2c5SWprMklpQm9aV2xuYUhROUlqazJJaUJ5ZUQwaU1qQWlJR1pwYkd3OUlpTXhZVEZrTWpBaUx6NEtJQ0E4WnlCMGNtRnVjMlp2Y20wOUluUnlZVzV6YkdGMFpTZ3lNQ3d5TUNraUlHWnBiR3c5SW01dmJtVWlJSE4wY205clpUMGlJMlkyWmpkbU55SWdjM1J5YjJ0bExYZHBaSFJvUFNJeklqNEtJQ0FnSUR4eVpXTjBJSGc5SWpJaUlIazlJaklpSUhkcFpIUm9QU0l4TmlJZ2FHVnBaMmgwUFNJeE5pSXZQanh5WldOMElIZzlJakl5SWlCNVBTSXlJaUIzYVdSMGFEMGlNVFlpSUdobGFXZG9kRDBpTVRZaUlHWnBiR3c5SWlObU5tWTNaamNpTHo0OGNtVmpkQ0I0UFNJME1pSWdlVDBpTWlJZ2QybGtkR2c5SWpFMklpQm9aV2xuYUhROUlqRTJJaTgrQ2lBZ0lDQThjbVZqZENCNFBTSXlJaUI1UFNJeU1pSWdkMmxrZEdnOUlqRTJJaUJvWldsbmFIUTlJakUySWk4K1BISmxZM1FnZUQwaU1qSWlJSGs5SWpJeUlpQjNhV1IwYUQwaU1UWWlJR2hsYVdkb2REMGlNVFlpTHo0OGNtVmpkQ0I0UFNJME1pSWdlVDBpTWpJaUlIZHBaSFJvUFNJeE5pSWdhR1ZwWjJoMFBTSXhOaUl2UGdvZ0lDQWdQSEpsWTNRZ2VEMGlNaUlnZVQwaU5ESWlJSGRwWkhSb1BTSXhOaUlnYUdWcFoyaDBQU0l4TmlJdlBqeHlaV04wSUhnOUlqSXlJaUI1UFNJME1pSWdkMmxrZEdnOUlqRTJJaUJvWldsbmFIUTlJakUySWk4K1BISmxZM1FnZUQwaU5ESWlJSGs5SWpReUlpQjNhV1IwYUQwaU1UWWlJR2hsYVdkb2REMGlNVFlpTHo0S0lDQThMMmMrQ2p3dmMzWm5QZ289IiwgInNpemVzIjogImFueSIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJtYXNrYWJsZSJ9XX0=">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiI+CiAgPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9IiMxYTFkMjAiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y2ZjdmNyIgc3Ryb2tlLXdpZHRoPSIzIj4KICAgIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiNmNmY3ZjciLz48cmVjdCB4PSI0MiIgeT0iMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+CiAgICA8cmVjdCB4PSIyIiB5PSIyMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz48cmVjdCB4PSI0MiIgeT0iMjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPgogICAgPHJlY3QgeD0iMiIgeT0iNDIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSI0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iNDIiIHk9IjQyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz4KICA8L2c+Cjwvc3ZnPgo=" type="image/svg+xml">
 <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiI+CiAgPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9IiMxYTFkMjAiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwyMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y2ZjdmNyIgc3Ryb2tlLXdpZHRoPSIzIj4KICAgIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiNmNmY3ZjciLz48cmVjdCB4PSI0MiIgeT0iMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+CiAgICA8cmVjdCB4PSIyIiB5PSIyMiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iMjIiIHk9IjIyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz48cmVjdCB4PSI0MiIgeT0iMjIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPgogICAgPHJlY3QgeD0iMiIgeT0iNDIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIvPjxyZWN0IHg9IjIyIiB5PSI0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2Ii8+PHJlY3QgeD0iNDIiIHk9IjQyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiLz4KICA8L2c+Cjwvc3ZnPgo=">
+<meta name="theme-color" content="#1a1d20">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -82,6 +74,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 /* board */
 .stage{
+  position:relative;
   flex:1;min-height:0;container-type:size;display:flex;padding:12px 10px 10px;margin:0 -10px;
   overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--line2) transparent;
 }
@@ -90,10 +83,12 @@ button{font:inherit;color:inherit;cursor:pointer}
 .stage::-webkit-scrollbar-thumb:hover{background:var(--ink2);background-clip:padding-box}
 .stage::-webkit-scrollbar-corner{background:transparent}
 
-/* cells keep a square shape. Up to 12 across they fill the screen; beyond that they stop shrinking and the stage scrolls */
+/* cells keep a square shape. Up to 12 across they fill the screen; beyond that they stop shrinking
+   and the stage scrolls — --zoom (from the zoom control) scales this further in either direction,
+   letting a big grid (up to 32x32 and beyond) be shrunk to fit, or a small one be enlarged. */
 .frame{
-  --gx:0px;--gy:0px;--gb:0px;--fit:12;
-  --s:max(calc(min(100cqw - var(--gx),100cqh - var(--gy) - var(--gb)) / var(--fit)),min(calc((100cqw - var(--gx)) / var(--cols)),calc((100cqh - var(--gy) - var(--gb)) / var(--rows))));
+  --gx:0px;--gy:0px;--gb:0px;--fit:12;--zoom:1;
+  --s:calc(max(calc(min(100cqw - var(--gx),100cqh - var(--gy) - var(--gb)) / var(--fit)),min(calc((100cqw - var(--gx)) / var(--cols)),calc((100cqh - var(--gy) - var(--gb)) / var(--rows)))) * var(--zoom));
   --bw:calc(var(--cols) * var(--s));
   --gap:clamp(2px,calc(var(--s) * .06),6px);
   flex:none;margin:auto;display:grid;grid-template-columns:var(--gx) var(--bw);grid-template-rows:var(--gy) auto var(--gb);
@@ -106,6 +101,14 @@ button{font:inherit;color:inherit;cursor:pointer}
   gap:var(--gap);touch-action:none;
 }
 .stage.scrollable .board{touch-action:pan-x pan-y}
+.zoombar{
+  position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:15;
+  display:flex;gap:2px;background:var(--surface);border:1px solid var(--line2);border-radius:5px;
+  padding:3px;box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+.zoombar button{width:30px;height:30px;border:0;background:transparent;color:var(--ink);border-radius:3px;font:400 17px/1 var(--font-ui);display:grid;place-items:center;padding:0}
+.zoombar button:active{background:var(--empty-hover)}
+.zoombar button:disabled{opacity:.35;cursor:default}
 .board.editing{outline:1px dashed color-mix(in srgb,var(--accent) 65%,transparent);outline-offset:10px}
 .edge{position:absolute;z-index:3;pointer-events:none;background:var(--accent);border-radius:2px}
 .edge.top{left:0;right:0;top:-6px;height:3px}
@@ -114,10 +117,24 @@ button{font:inherit;color:inherit;cursor:pointer}
 .edge.right{top:0;bottom:0;right:-6px;width:3px}
 .cell{
   --cw:calc(100cqw / var(--cols));
+  container-type:inline-size;
   position:relative;border-radius:min(4px,calc(var(--cw) * .07));overflow:hidden;cursor:pointer;outline:none;
   background:transparent;box-shadow:inset 0 0 0 1px var(--line);
   transition:transform .15s,background .15s,opacity .15s;
   -webkit-user-select:none;user-select:none;
+}
+/* once a cell renders too small to read, stop squeezing its text/icon/thumbnail in and show a
+   plain presence mark instead — a dot for a memo, a small square for a sub-grid — so it's still
+   obvious the cell is filled even zoomed far out over a large grid. */
+@container (max-width: 24px) {
+  .cell.note .txt,.cell.note .cicon,.cell.note .cimg,.cell.grid .txt,.cell.grid .gridmark{visibility:hidden}
+  .cell.note::after,.cell.grid::after{
+    content:""!important;position:absolute!important;inset:0!important;right:auto!important;bottom:auto!important;
+    margin:auto!important;width:30%!important;height:30%!important;min-width:3px;min-height:3px;max-width:7px;max-height:7px;
+    background:var(--on,var(--ink))!important;opacity:.6!important;box-shadow:none!important;
+  }
+  .cell.note::after{border-radius:50%!important}
+  .cell.grid::after{border-radius:1px!important}
 }
 .cell:active{transform:scale(.97)}
 .cell:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -144,11 +161,32 @@ button{font:inherit;color:inherit;cursor:pointer}
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 55%,transparent);
 }
 .cell.note .txt{
-  position:absolute;inset:calc(var(--cw) * .1);overflow:hidden;
-  font-size:clamp(6.5px,calc(var(--cw) * .2),16px);line-height:1.4;font-weight:500;letter-spacing:.02em;
+  position:absolute;inset:max(3px,calc(var(--cw) * .09));overflow:hidden;
+  font-size:clamp(5px,calc(var(--cw) * .095),10px);line-height:1.25;font-weight:500;letter-spacing:.01em;
   word-break:break-all;
 }
+/* the ideal title size depends on the device, not just the cell's own pixel width: a phone screen
+   only has room for a few characters before this would need to shrink to the point of illegibility,
+   so it uses a smaller scale and cap; a larger desktop screen has room to go noticeably bigger and
+   more readable instead of staying tiny just because the grid itself has many cells. The inset above
+   keeps a real minimum gap (not just a percentage of a small cell) so bigger text never crowds the
+   cell's own border. */
+@media (max-width:640px){
+  .cell.note .txt{font-size:clamp(4.5px,calc(var(--cw) * .075),8px)}
+  .cell.grid .ttl{font-size:clamp(5px,calc(var(--cw) * .095),8.5px)}
+}
+@media (min-width:1024px){
+  .cell.note .txt{font-size:clamp(8px,calc(var(--cw) * .15),18px);line-height:1.3}
+  .cell.grid .ttl{font-size:clamp(8.5px,calc(var(--cw) * .17),18px)}
+}
 .cell.note .txt.ph{opacity:.42}
+.cell.note .cimg{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;-webkit-user-drag:none;
+}
+.cell.note .cicon{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--on,var(--ink));
+}
+.cell.note .cicon svg{width:52%;height:52%;max-width:34px;max-height:34px}
 .cell.note.w::after{
   content:"";position:absolute;right:0;bottom:0;width:calc(var(--cw) * .17);aspect-ratio:1;
   background:linear-gradient(135deg,transparent 50%,color-mix(in srgb,currentColor 26%,transparent) 50%);
@@ -158,25 +196,23 @@ button{font:inherit;color:inherit;cursor:pointer}
 .cell.grid{
   background:color-mix(in srgb,var(--c,var(--ink)) calc(var(--a,.09) * 100%),var(--surface));color:var(--on,var(--ink));
   box-shadow:inset 0 0 0 max(1.5px,calc(var(--cw) * .03)) var(--c,var(--ink));
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  padding:calc(var(--cw) * .12);gap:calc(var(--cw) * .05);
 }
-.miniwrap{width:100%;aspect-ratio:1;flex:none;display:grid;place-items:center}
-.mini{
-  width:calc(100% * min(1, var(--cols) / var(--rows)));aspect-ratio:var(--cols) / var(--rows);display:grid;
-  grid-template-columns:repeat(var(--cols),1fr);grid-template-rows:repeat(var(--rows),1fr);
-  box-shadow:inset 0 0 0 1px var(--line2);
-  background-image:linear-gradient(to right,var(--line) 1px,transparent 1px),linear-gradient(to bottom,var(--line) 1px,transparent 1px);
-  background-size:calc(100% / var(--cols)) calc(100% / var(--rows));
-  background-color:color-mix(in srgb,var(--surface) 75%,transparent);
-  overflow:hidden;
+.cell.grid .txt{
+  position:absolute;inset:max(3px,calc(var(--cw) * .09));overflow:hidden;
+  font-size:clamp(5px,calc(var(--cw) * .095),10px);line-height:1.25;font-weight:500;letter-spacing:.01em;
+  word-break:break-all;
 }
-.mini i{margin:.5px;background:color-mix(in srgb,var(--c) calc(max(var(--a,1),.35) * 100%),var(--surface))}
-.mini i.g{background:color-mix(in srgb,var(--c) 26%,transparent);outline:1px solid var(--c);outline-offset:-1px}
-.cell.grid.t .miniwrap{width:66%}
-.cell.grid .ttl{
-  max-width:100%;font-size:clamp(6.5px,calc(var(--cw) * .15),12px);font-weight:500;line-height:1.2;letter-spacing:.03em;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+.cell.grid .gridmark{
+  position:absolute;top:calc(var(--cw) * .07);right:calc(var(--cw) * .07);
+  width:calc(var(--cw) * .22);height:calc(var(--cw) * .22);min-width:9px;min-height:9px;max-width:15px;max-height:15px;
+  color:var(--on,var(--ink));opacity:.5;pointer-events:none;
+}
+.cell.grid .gridmark svg{width:100%;height:100%;display:block}
+@media (max-width:640px){
+  .cell.grid .txt{font-size:clamp(4.5px,calc(var(--cw) * .075),8px)}
+}
+@media (min-width:1024px){
+  .cell.grid .txt{font-size:clamp(8px,calc(var(--cw) * .15),18px)}
 }
 
 .ghost{position:absolute;z-index:20;pointer-events:none;transform:scale(1.05);box-shadow:0 18px 34px rgba(0,0,0,.26);transition:none;opacity:.97}
@@ -260,6 +296,19 @@ textarea.field{resize:none}
 .sw.custom.on::before{content:none}
 .sw.custom input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;border:0;padding:0}
 .sheet-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.imagerow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:2px 0}
+.imgpreview{width:52px;height:52px;border-radius:4px;overflow:hidden;box-shadow:inset 0 0 0 1px var(--line2);flex:none}
+.imgpreview img{width:100%;height:100%;object-fit:cover;display:block}
+.imagerow .btn{flex:none;min-height:38px;padding:0 14px}
+.iconrow{display:flex;flex-wrap:wrap;gap:8px;padding:2px 0}
+.icn{
+  width:38px;height:38px;border:1px solid var(--line2);border-radius:4px;background:transparent;color:var(--ink);
+  display:grid;place-items:center;padding:0;
+}
+.icn svg{width:19px;height:19px}
+.icn.none{font-size:10px;letter-spacing:.03em;color:var(--ink2)}
+.icn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.icn:active{filter:brightness(.94)}
 .btn{flex:1;min-height:46px;border-radius:3px;border:1px solid var(--line2);background:transparent;color:var(--ink);font-size:14px;font-weight:500;letter-spacing:.06em;padding:0 14px}
 .btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink);flex-basis:100%}
 .btn.ghosty:active{background:var(--empty-hover)}
@@ -565,6 +614,13 @@ textarea.field{resize:none}
       </button>
       <div id="board" class="board intro"></div>
     </div>
+    <div id="zoomBar" class="zoombar">
+      <button id="zoomOut" aria-label="縮小">−</button>
+      <button id="zoomFit" aria-label="画面に合わせる">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+      </button>
+      <button id="zoomIn" aria-label="拡大">+</button>
+    </div>
   </main>
 
   <footer class="bar">
@@ -646,6 +702,17 @@ textarea.field{resize:none}
     <input id="alpha" type="range" min="0" max="90" step="5" value="70" aria-label="色の透明度">
     <output id="alphaOut" for="alpha">—</output>
   </div>
+  <div id="mediaSection">
+    <div class="row-label">画像</div>
+    <div class="imagerow">
+      <div id="imgPreviewWrap" class="imgpreview" hidden><img id="imgPreview" alt=""></div>
+      <input type="file" id="imageFile" accept="image/*" hidden>
+      <button id="imgAddBtn" class="btn ghosty">画像を追加</button>
+      <button id="imgRemoveBtn" class="btn ghosty" hidden>画像を削除</button>
+    </div>
+    <div class="row-label">アイコン</div>
+    <div id="iconRow" class="iconrow"></div>
+  </div>
   <div class="sheet-actions">
     <button id="openGrid" class="btn primary">このグリッドを開く</button>
     <button id="clearCell" class="btn ghosty">このマスを空にする</button>
@@ -677,6 +744,51 @@ const P_DEFAULT = '#5d7284';
 const P_STRONG = 0.55, P_WEAK = 0.05;  /* priority heatmap: strongest / weakest share of the base colour */
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+/* a small curated set of simple, recognisable pictograms a cell can show instead of its title */
+const ICONS = {
+  star: '<path d="M12 2l2.9 6.9L22 9.3l-5.5 5.1L18 22l-6-3.6L6 22l1.5-7.6L2 9.3l7.1-.4L12 2z"/>',
+  heart: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+  check: '<polyline points="4 12 10 18 20 6"/>',
+  flag: '<path d="M4 3v18"/><path d="M4 4h13l-2 4 2 4H4"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  home: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>',
+  bell: '<path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 19a2 2 0 0 0 4 0"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/>',
+  phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  sun: '<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>',
+  moon: '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+  cloud: '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>',
+  droplet: '<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>',
+  gift: '<polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>',
+  coffee: '<path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><path d="M6 1v4M10 1v4M14 1v4"/>',
+  cart: '<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>',
+  car: '<path d="M3 13l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5"/><rect x="1" y="13" width="22" height="5" rx="1"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
+  plane: '<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',
+  book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>',
+  tag: '<path d="M20.59 13.41L13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1"/>',
+  pin: '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+  alert: '<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/>',
+  bulb: '<path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.3h6c0-1.1.4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
+  camera: '<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
+  music: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  dollar: '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
+  chart: '<line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>',
+  smile: '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>',
+  target: '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+  lock: '<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
+};
+const iconSVG = id => ICONS[id] ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[id]}</svg>` : '';
+/* a small badge marking "this cell leads to a sub-grid" — the same 3x3 glyph as the app's own logo,
+   so the cue reads as "there's a Grids grid in here" rather than an arbitrary icon */
+const GRIDMARK = '<svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
+  + '<rect x=".5" y=".5" width="6" height="6"/><rect x="8" y=".5" width="6" height="6"/><rect x="15.5" y=".5" width="6" height="6"/>'
+  + '<rect x=".5" y="8" width="6" height="6"/><rect x="8" y="8" width="6" height="6"/><rect x="15.5" y="8" width="6" height="6"/>'
+  + '<rect x=".5" y="15.5" width="6" height="6"/><rect x="8" y="15.5" width="6" height="6"/><rect x="15.5" y="15.5" width="6" height="6"/>'
+  + '</svg>';
+
 const $ = s => document.querySelector(s);
 const stage = $('#stage'), frame = $('#frame'), board = $('#board'), colHead = $('#colHead'), rowHead = $('#rowHead');
 const crumbsEl = $('#crumbs'), upBtn = $('#up'), editBtn = $('#editParent'), toastEl = $('#toast');
@@ -707,7 +819,7 @@ const newNode = (rows, cols = rows) => ({
   mode: 'free', rows, cols, cells: new Array(rows * cols).fill(null),
   colLabels: fitLabels(null, cols), rowLabels: fitLabels(null, rows), graph: blankGraph(), paxis: blankPAxis(), pshape: 'v', pcolor: P_DEFAULT
 });
-const newCell = () => ({ id: uid(), type: 'note', title: '', text: '', color: null, alpha: DEFAULT_ALPHA, child: null });
+const newCell = () => ({ id: uid(), type: 'note', title: '', text: '', color: null, alpha: DEFAULT_ALPHA, child: null, icon: null, image: null });
 const newVault = name => ({ id: uid(), name, root: newNode(ROOT_SIZE), path: [] });
 const esc = s => String(s).replace(/[&<>"']/g, ch => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[ch]));
 const isHex = v => typeof v === 'string' && /^#[0-9a-f]{6}$/i.test(v);
@@ -787,6 +899,8 @@ function cleanNode(n, depth = 0) {
         text,
         color: isHex(c.color) ? c.color.toLowerCase() : null,
         alpha: typeof c.alpha === 'number' && isFinite(c.alpha) ? clampA(c.alpha) : DEFAULT_ALPHA,
+        icon: typeof c.icon === 'string' && ICONS[c.icon] ? c.icon : null,
+        image: typeof c.image === 'string' && /^data:image\/(png|jpeg|webp);base64,/.test(c.image) && c.image.length < 700000 ? c.image : null,
         child: null
       };
       if (c.child && depth < 40) cell.child = cleanNode(c.child, depth + 1);
@@ -879,10 +993,15 @@ function cellHTML(c, i, ctx) {
   const pr = ctx.prio ? `--pr:${rgbCSS(prioTone(node, i, c.color, c.alpha))};` : '';
   const cs = (c.color ? `--c:${c.color};--a:${c.alpha};` : '') + (on ? `--on:${on};` : '') + pr + `--i:${i}`;
   if (c.type === 'grid') {
-    const t = ctx.maxd <= 8 && ttl;
-    return `<div class="cell grid${c.color ? ' colored' : ''}${t ? ' t' : ''}" ${base} style="${cs}" aria-label="グリッド ${esc(ttl || '無題')}">${miniHTML(c.child)}${t ? `<div class="ttl">${esc(ttl)}</div>` : ''}</div>`;
+    return `<div class="cell grid${c.color ? ' colored' : ''}" ${base} style="${cs}" aria-label="グリッド ${esc(ttl || '無題')}"><div class="txt${ttl ? '' : ' ph'}">${esc(ttl || '無題')}</div><div class="gridmark" aria-hidden="true">${GRIDMARK}</div></div>`;
   }
-  return `<div class="cell note${c.color ? ' colored' : ''}${body ? ' w' : ''}" ${base} style="${cs}" aria-label="メモ ${esc(ttl || '無題')}"><div class="txt${ttl ? '' : ' ph'}">${esc(ttl || (body ? '無題' : ''))}</div></div>`;
+  if (c.type === 'note') {
+    let inner;
+    if (c.image) inner = `<img class="cimg" src="${c.image}" alt="" draggable="false">`;
+    else if (c.icon) inner = `<div class="cicon" aria-hidden="true">${iconSVG(c.icon)}</div>`;
+    else inner = `<div class="txt${ttl ? '' : ' ph'}">${esc(ttl || (body ? '無題' : ''))}</div>`;
+    return `<div class="cell note${c.color ? ' colored' : ''}${body ? ' w' : ''}" ${base} style="${cs}" aria-label="メモ ${esc(ttl || '無題')}">${inner}</div>`;
+  }
 }
 
 function headsHTML(node) {
@@ -934,6 +1053,23 @@ function updateScrollable() {
 }
 if (window.ResizeObserver) { const ro = new ResizeObserver(updateScrollable); ro.observe(stage); ro.observe(frame); }
 
+/* ---------- view zoom: lets a large grid (up to 32x32 and beyond) be shrunk to fit, or a small
+   one be enlarged, independent of the natural "fit to screen" size ---------- */
+const zoomOutBtn = $('#zoomOut'), zoomInBtn = $('#zoomIn'), zoomFitBtn = $('#zoomFit');
+const VZ_MIN = 0.3, VZ_MAX = 3;
+let VZ = 1;
+function setViewZoom(z) {
+  VZ = Math.min(VZ_MAX, Math.max(VZ_MIN, z));
+  frame.style.setProperty('--zoom', VZ);
+  zoomOutBtn.disabled = VZ <= VZ_MIN + 1e-6;
+  zoomInBtn.disabled = VZ >= VZ_MAX - 1e-6;
+  requestAnimationFrame(updateScrollable);
+}
+zoomOutBtn.addEventListener('click', () => setViewZoom(VZ / 1.25));
+zoomInBtn.addEventListener('click', () => setViewZoom(VZ * 1.25));
+zoomFitBtn.addEventListener('click', () => setViewZoom(1));
+setViewZoom(1);
+
 function renderCrumbs(r) {
   const v = V();
   const items = [{ d: 0, label: v.name }];
@@ -964,6 +1100,7 @@ function zoom(kind, rect) {
 function enter(c, rect) {
   V().path.push(c.id);
   stage.scrollTo(0, 0);
+  setViewZoom(1);
   render(); zoom('in', rect); save();
 }
 function goTo(depth) {
@@ -971,6 +1108,7 @@ function goTo(depth) {
   if (depth >= v.path.length) return;
   v.path = v.path.slice(0, depth);
   stage.scrollTo(0, 0);
+  setViewZoom(1);
   render(); zoom('out'); save();
 }
 
@@ -1523,6 +1661,57 @@ swBox.innerHTML =
   PALETTE.map(c => `<button class="sw" data-c="${c.toLowerCase()}" style="--c:${c}" aria-label="色 ${c}"></button>`).join('') +
   `<label class="sw custom" id="customSw" aria-label="好きな色を選ぶ"><input type="color" id="customColor" value="#888888"></label>`;
 const customSw = $('#customSw'), customInput = $('#customColor');
+const mediaSection = $('#mediaSection'), iconRow = $('#iconRow');
+const imgAddBtn = $('#imgAddBtn'), imgRemoveBtn = $('#imgRemoveBtn'), imageFile = $('#imageFile');
+const imgPreviewWrap = $('#imgPreviewWrap'), imgPreview = $('#imgPreview');
+
+iconRow.innerHTML =
+  `<button class="icn none" data-icon="" aria-label="アイコンなし">なし</button>` +
+  Object.keys(ICONS).map(id => `<button class="icn" data-icon="${id}" aria-label="アイコン ${id}">${iconSVG(id)}</button>`).join('');
+
+iconRow.addEventListener('click', e => {
+  const b = e.target.closest('.icn'); if (!b || !sh) return;
+  ensureCell().icon = b.dataset.icon || null;
+  syncSheet(false); scheduleRender(); save();
+});
+
+/* attaching an image: shrink it to a sensible size and re-encode as JPEG before storing, so a
+   phone photo doesn't bloat localStorage or the JSON export */
+function readImageFile(file) {
+  if (!file.type.startsWith('image/')) { toast('画像ファイルを選んでください'); return; }
+  const reader = new FileReader();
+  reader.onload = () => {
+    const img = new Image();
+    img.onload = () => {
+      const MAXD = 640;
+      let w = img.naturalWidth, h = img.naturalHeight;
+      const scale = Math.min(1, MAXD / Math.max(w, h));
+      w = Math.max(1, Math.round(w * scale)); h = Math.max(1, Math.round(h * scale));
+      const cnv = document.createElement('canvas'); cnv.width = w; cnv.height = h;
+      const cctx = cnv.getContext('2d');
+      cctx.fillStyle = '#ffffff'; cctx.fillRect(0, 0, w, h);
+      cctx.drawImage(img, 0, 0, w, h);
+      if (!sh) return;
+      ensureCell().image = cnv.toDataURL('image/jpeg', 0.78);
+      syncSheet(false); scheduleRender(); save();
+    };
+    img.onerror = () => toast('画像を読み込めませんでした');
+    img.src = reader.result;
+  };
+  reader.onerror = () => toast('ファイルを読み込めませんでした');
+  reader.readAsDataURL(file);
+}
+imgAddBtn.addEventListener('click', () => { imageFile.value = ''; imageFile.click(); });
+imageFile.addEventListener('change', () => {
+  const f = imageFile.files && imageFile.files[0];
+  if (f) readImageFile(f);
+});
+imgRemoveBtn.addEventListener('click', () => {
+  if (!sh) return;
+  const c = sh.node.cells[sh.idx]; if (!c) return;
+  c.image = null;
+  syncSheet(false); scheduleRender(); save();
+});
 
 function ensureCell() {
   let c = sh.node.cells[sh.idx];
@@ -1531,7 +1720,7 @@ function ensureCell() {
 }
 function normalize(node, idx) {
   const c = node.cells[idx]; if (!c) return;
-  if (c.type === 'note' && !c.title.trim() && !c.text.trim() && !c.color && (!c.child || isEmptyNode(c.child))) node.cells[idx] = null;
+  if (c.type === 'note' && !c.title.trim() && !c.text.trim() && !c.color && !c.image && !c.icon && (!c.child || isEmptyNode(c.child))) node.cells[idx] = null;
 }
 
 function syncSheet(initial) {
@@ -1558,6 +1747,14 @@ function syncSheet(initial) {
   customSw.style.setProperty('--c', col || '#888888');
   openBtn.hidden = !(type === 'grid' && c && sh.node === resolve().node);
   clearBtn.hidden = !c;
+  mediaSection.hidden = type !== 'note';
+  const img = c && c.image;
+  imgPreviewWrap.hidden = !img;
+  if (img) imgPreview.src = img;
+  imgAddBtn.textContent = img ? '画像を変更' : '画像を追加';
+  imgRemoveBtn.hidden = !img;
+  const icon = (c && c.icon) || '';
+  iconRow.querySelectorAll('.icn').forEach(b => b.classList.toggle('on', b.dataset.icon === icon));
   if (initial) disarm();
 }
 
@@ -1643,7 +1840,7 @@ function disarm() {
 clearBtn.addEventListener('click', () => {
   if (!sh) return;
   const c = sh.node.cells[sh.idx]; if (!c) return;
-  const hasData = c.title.trim() || c.text.trim() || (c.child && !isEmptyNode(c.child));
+  const hasData = c.title.trim() || c.text.trim() || c.image || c.icon || (c.child && !isEmptyNode(c.child));
   if (hasData && !armed) {
     armed = true;
     clearBtn.classList.add('armed');
@@ -1714,6 +1911,7 @@ function renderVaults() {
 }
 function vaultAnim() {
   stage.scrollTo(0, 0);
+  setViewZoom(1);
   if (reduce) return;
   board.style.transformOrigin = '50% 50%';
   board.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.2,.8,.2,1)' });
@@ -1880,13 +2078,6 @@ renderVaults();
 render();
 setTimeout(() => board.classList.remove('intro'), 1300);
 })();
-</script>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js').catch(() => {});
-  });
-}
 </script>
 </body>
 </html>
